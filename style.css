@@ -16,4 +16,6 @@ h2{
 .text{
     float:left;
     max-width: 500px;
+    height: 200px;;
 }
+
