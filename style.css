@@ -111,7 +111,6 @@ ul a:active{
 }
 
 ul a {
-    text-decoration: underline;
     text-decoration-color: #50f3fc;
     color: black;
     font-family: serif;
