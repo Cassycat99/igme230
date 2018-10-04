@@ -185,3 +185,22 @@ li {
         top: 150px;
     }
 }
+
+@media screen and (max-width: 36rem){
+
+    main{
+        flex-direction:column;
+        width: 100vw;
+    }
+
+    #wrapper{
+        max-width: none;
+    }
+
+    nav, aside, article{
+        order: 0;
+        flex: 1;
+        margin: .5rem;
+    }
+
+}
