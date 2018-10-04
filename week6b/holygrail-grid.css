@@ -71,3 +71,13 @@ footer{
     grid-template-rows: 1fr 2fr 10fr 2fr 1fr;
 }
 
+@media screen and (min-width: 760px){
+    #wrapper{
+        grid-template-areas: "header header header"
+        "sidebar article sidebar"
+        "footer footer footer"
+        grid-template-rows: 1fr 10fr 1fr;
+        grid-template-columns: 20% auto 20%; 
+    }
+
+}
