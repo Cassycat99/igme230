@@ -23,20 +23,20 @@ input, textarea {
     border: 1px solid #999;
 }
 
-input:focus, textarea:focus{
+input:focus, textarea:focus {
     border-color: #000;
 }
 
-textarea{
+textarea {
     vertical-align: top;
     height: 5em;
 }
 
-.button{
+.button {
     padding-left: 90px;
 }
 
-button{
+button {
     margin-left: .5em;
 }
 
