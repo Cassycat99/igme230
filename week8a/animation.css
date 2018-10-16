@@ -77,3 +77,15 @@ main {
  CSS Animation 
 **************/
 
+@keyframes entrance{
+    from{transform: translateX(-2000px);}
+    to {transform: translateX(0px);}
+  }
+
+  main{
+    animation-name: entrance;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    motion-path: linear;
+    }
+  
