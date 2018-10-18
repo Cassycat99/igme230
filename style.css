@@ -192,12 +192,12 @@ li {
     #projects{
         margin-left: 0px;
         position: relative;
-        top: 400px;
+        top: 450px;
     }
     
     .projectsList{
         left: -50px;
-        top: 400px;
+        top: 450px;
     }   
     
     ul{
