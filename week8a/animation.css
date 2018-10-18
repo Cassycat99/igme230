@@ -88,19 +88,19 @@ main {
 }
 
 main div:nth-child(1) {
-    animation: entrance .5s 3.5s linear both;
+    animation: entrance .5s 2s linear both;
     }
     
     main div:nth-child(2) {
-    animation: entrance .5s 3s linear both;
+    animation: entrance .5s 1.5s linear both;
     }
     
     main div:nth-child(3) {
-    animation: entrance .5s 2.5s linear both;
+    animation: entrance .5s 1s linear both;
     }
     
     main div:nth-child(4) {
-    animation: entrance .5s 2s linear both;
+    animation: entrance .5s .5s linear both;
     }
     
 
