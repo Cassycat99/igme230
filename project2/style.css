@@ -2,6 +2,16 @@
     box-sizing: border-box;
 }
 
+/*FONTS*/
+h1, h2, h3, h4, h5, ul {
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+p{  
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
 
 #Wrapper {
     max-width: 1080px;
@@ -11,11 +21,6 @@
     height: calc(100vh - 80px);*/
 
 }
-
-h1, h2, h3, h4, h5, ul {
-    font-family: 'Hind Madurai', sans-serif;
-}
-
 
 ul {
     list-style-type: none;
@@ -103,3 +108,4 @@ h5 {
     min-width: 300px;
     color: #336d8e;
 }
+
