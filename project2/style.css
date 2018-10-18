@@ -31,7 +31,7 @@ header {
     justify-content: space-between;
 }
 
-h4 {
+#Name {
     margin: 0px;
     min-width: 300px;
     color: #336d8e;
@@ -93,7 +93,7 @@ banner ul li.Type {
 }
 
 footer {
-    
+
 }
 
 h5 {
