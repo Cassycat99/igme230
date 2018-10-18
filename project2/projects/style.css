@@ -12,10 +12,13 @@
 
 }
 
+h1, h2, h3, h4, h5, ul {
+    font-family: 'Hind Madurai', sans-serif;
+}
+
 
 ul {
     list-style-type: none;
-    font-family: 'Nunito Sans', sans-serif;
 }
 
 ul a {
@@ -28,11 +31,11 @@ header {
     justify-content: space-between;
 }
 
-h4 {
+#Name {
     margin: 0px;
     min-width: 300px;
-    font-family: 'Nunito Sans', sans-serif;
     color: #336d8e;
+    text-decoration: none;
 }
 
 nav .ActiveLink {
@@ -49,7 +52,6 @@ nav ul {
 }
 
 nav ul a {
-    font-family: 'Nunito Sans', sans-serif;
     color: #336d8e;
 }
 
@@ -91,15 +93,12 @@ banner ul li.Type {
     padding: 0px 0px 24px 16px;
 }
 
-footer {}
+footer {
+
+}
 
 h5 {
     margin: 0px;
     min-width: 300px;
-    font-family: 'Nunito Sans', sans-serif;
     color: #336d8e;
-}
-
-h1, h2{
-    font-family: 'Nunito Sans', sans-serif;
 }
