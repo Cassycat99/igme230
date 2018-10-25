@@ -24,7 +24,9 @@ p{
 
 ul {
     list-style-type: none;
-    align-content: center;
+    align-self: center;
+    padding: 0px 40px 0px 0px;
+    min-width: 140px;
 }
 
 ul a {
@@ -72,8 +74,8 @@ section {
     width: auto;
     background-color: aliceblue;
     display: flex;
-    justify-content: flex-end;
-    min-width: 500px;
+    justify-content: center;
+    min-width: 700px;
 }
 
 .ImgHolder {
