@@ -24,9 +24,6 @@ p{
 
 ul {
     list-style-type: none;
-    align-self: center;
-    padding: 0px 40px 0px 0px;
-    min-width: 140px;
 }
 
 ul a {
@@ -75,6 +72,16 @@ section {
     display: flex;
     justify-content: center;
     min-width: 700px;
+}
+
+section ul{
+    align-self: center;
+    padding: 0px 40px 0px 0px;
+    min-width: 140px;
+}
+
+section .type{
+    padding-bottom: 40px;
 }
 
 .ImgHolder {
