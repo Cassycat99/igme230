@@ -41,9 +41,19 @@
 </div>
 
 <script>
-/* Write your code here! */
+let radioQ = document.querySelectorAll('#colorform > p > input');
+let textBox = document.querySelector('#colorform > #info');
 
-//look at value of radial button to change things
+function radioClicked() {
+    textBox.innerHTML = "You have selected the color " + this.value;
+	currentVal = this.value;
+}
+
+for(let i = 0; i < radioQ.length; i++){
+	radioQ[i].addEventListener("click", radioClicked);
+}
+
+
 </script>
 </body>
 </html>
