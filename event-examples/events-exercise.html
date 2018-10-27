@@ -57,9 +57,12 @@ let button = document.querySelector('#colorform > p> button');
 let currentVal;
 function buttonClicked(){
 	textBox.innerHTML = "Your FINAL CHOICE is " + currentVal;
+	document.getElementsByTagName("Legend").style.font = currentVal;
 }
 
 button.addEventListener("click", buttonClicked);
+
+//let changeColor = (legend) => { legend.target.style.color = "magenta"; };
 
 
 </script>
