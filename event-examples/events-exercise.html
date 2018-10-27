@@ -43,6 +43,7 @@
 <script>
 let radioQ = document.querySelectorAll('#colorform > p > input');
 let textBox = document.querySelector('#colorform > #info');
+let legend = document.querySelector('#colorform > legend');
 
 function radioClicked() {
     textBox.innerHTML = "You have selected the color " + this.value;
@@ -57,12 +58,10 @@ let button = document.querySelector('#colorform > p> button');
 let currentVal;
 function buttonClicked(){
 	textBox.innerHTML = "Your FINAL CHOICE is " + currentVal;
-	document.getElementsByName("#colorform legend").style.font = currentVal;
-}
+	legend.style.color = currentVal;
+	}
 
 button.addEventListener("click", buttonClicked);
-
-//let changeColor = (legend) => { legend.target.style.color = "magenta"; };
 
 
 </script>
