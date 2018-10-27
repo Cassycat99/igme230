@@ -38,9 +38,15 @@
         for (i = 0; i < colors.length; i++){
         let newListItem = document.createElement("li");
         let newText = document.createTextNode(colors[i]);
-        //newListItem.innerHTML = colors[i];
         newListItem.appendChild(newText);
         document.getElementById("colorsList").appendChild(newListItem);
+        }
+
+        for (i = 0; i < colors.length; i++){
+        let newListItem = document.createElement("li");
+        let newText = document.createTextNode(foods[i]);
+        newListItem.appendChild(newText);
+        document.getElementById("foodsList").appendChild(newListItem);
         }
 
         
