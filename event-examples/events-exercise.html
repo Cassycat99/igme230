@@ -57,7 +57,7 @@ let button = document.querySelector('#colorform > p> button');
 let currentVal;
 function buttonClicked(){
 	textBox.innerHTML = "Your FINAL CHOICE is " + currentVal;
-	document.getElementsByTagName("Legend").style.font = currentVal;
+	document.getElementsByName("#colorform legend").style.font = currentVal;
 }
 
 button.addEventListener("click", buttonClicked);
