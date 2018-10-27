@@ -53,6 +53,11 @@ for(let i = 0; i < radioQ.length; i++){
 	radioQ[i].addEventListener("click", radioClicked);
 }
 
+let button = document.querySelector('#colorform > p> button');
+let currentVal;
+function buttonClicked(){
+	textBox.innerHTML = "Your FINAL CHOICE is " + currentVal;
+}
 
 </script>
 </body>
