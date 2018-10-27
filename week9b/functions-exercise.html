@@ -34,21 +34,18 @@
         let colors = ["Green", "Blue", "Purple"]; // add some colors
         let foods = ["Chicken Parm", "Ice-cream", "Mash Potatoes"]; // add some foods
 
+        function createList(listElement,array){
         let i;
         for (i = 0; i < colors.length; i++){
         let newListItem = document.createElement("li");
-        let newText = document.createTextNode(colors[i]);
+        let newText = document.createTextNode(array[i]);
         newListItem.appendChild(newText);
-        document.getElementById("colorsList").appendChild(newListItem);
+        document.getElementById(listElement).appendChild(newListItem);
+        }
         }
 
-        for (i = 0; i < colors.length; i++){
-        let newListItem = document.createElement("li");
-        let newText = document.createTextNode(foods[i]);
-        newListItem.appendChild(newText);
-        document.getElementById("foodsList").appendChild(newListItem);
-        }
-
+        function("colorsList",colors);
+        function("foodsList",foods);
         
 
     </script>
