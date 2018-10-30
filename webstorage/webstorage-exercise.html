@@ -61,8 +61,6 @@
     if (storedColor) {
         colorSelect.querySelector(`option[value='${storedColor}']`).selected = true; //sets color value if found
     }
-
-    document.body.style.background = storedColor; //adding background color based on the color selected
     
     //function updateBackground(){
     //    document.body.style.background = storedColor; //adding background color based on the color selected
@@ -72,7 +70,9 @@
     // when the user changes their name or color, update localStorage
     nameField.onchange = e => { localStorage.setItem(nameKey, e.target.value); }; //changes name field
     colorSelect.onchange = e => { localStorage.setItem(colorKey, e.target.value); };  //changes color field
+    colorSelect.onchange = e => { localStorage.setItem(storedColor, e.target.value); }; //changing stored color
     //colorSelect.onchange = e => { updateBackground; };
+    document.body.style.background = storedColor; //adding background color based on the color selected
 
 </script>
 </body>
