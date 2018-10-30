@@ -71,7 +71,9 @@
     nameField.onchange = e => { localStorage.setItem(nameKey, e.target.value); }; //changes name field
     colorSelect.onchange = e => { localStorage.setItem(colorKey, e.target.value); };  //changes color field
     colorSelect.onchange = e => { localStorage.setItem(storedColor, e.target.value); }; //changing stored color
+    
     //colorSelect.onchange = e => { updateBackground; };
+    
     document.body.style.background = storedColor; //adding background color based on the color selected
 
 </script>
