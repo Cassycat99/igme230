@@ -61,6 +61,8 @@
     if (storedColor) {
         colorSelect.querySelector(`option[value='${storedColor}']`).selected = true; //sets color value if found
     }
+
+    document.body.style.background = storedColor;
     
     /* This part of the script is triggered by user actions  */
     // when the user changes their name or color, update localStorage
