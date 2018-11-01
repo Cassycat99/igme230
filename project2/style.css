@@ -41,6 +41,7 @@ header {
     color: #336d8e;
     text-decoration: none;
     font-family: 'Hind Madurai', sans-serif;
+    font-weight: bold;
 }
 
 nav .ActiveLink {
