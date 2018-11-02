@@ -93,6 +93,14 @@ section .type{
     margin-right: 146px;
 }
 
+#MedicalMockUp{
+    max-width: 100%;
+    width: 400px;
+    height: 300px;
+    align-self: center;
+    margin-right: 146px;
+}
+
 banner ul {
     display: flex;
     flex-direction: column;
