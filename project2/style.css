@@ -15,7 +15,8 @@ p{
 
 #Wrapper {
     max-width: 1080px;
-    margin: 40px;
+    padding: 40px;
+    margin: auto;
     /*display: flex;
     flex-direction: column;
     height: calc(100vh - 80px);*/
