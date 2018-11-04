@@ -125,18 +125,18 @@ section .type{
     margin-right: 146px;
 }
 
-banner ul {
+.section ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding: 0px 96px 0px 0px;
 }
 
-banner ul li {
+.section ul li {
     padding: 16px 16px 8px 16px;
 }
 
-banner ul li.Type {
+.section ul li.Type {
     font-size: .8em;
     padding: 0px 0px 24px 16px;
 }
