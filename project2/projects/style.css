@@ -145,14 +145,24 @@ h5 {
     display: flex;
     max-width: 1080px;
     background-color: red;
-    flex-wraap: wrap;
-    align-items: center;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
 }
 
 .Wireframe{
-   // max-width: 100%;
-   // justify-content: space-around;
-   // flex-wrap: wrap;
-   max-width: 200px;
+    width: 33%;
+    padding: 1px 1px 0px 1px;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .ThreePhotos{
+        flex-flow: column-wrap;
+    }
+
+    .Wireframe{
+        width: 100%;
+    }
+
 }
