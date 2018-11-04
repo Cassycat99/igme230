@@ -137,3 +137,17 @@ h5 {
     font-weight: Bold;
     color: #336d8e;
 }
+
+
+/*CUSTOM CSS NOT ON HOME CSS*/
+
+.SixPhotos{
+    display: flex;
+    max-width: 100%;
+}
+
+.Wireframe{
+    max-width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
