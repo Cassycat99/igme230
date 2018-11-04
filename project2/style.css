@@ -14,14 +14,18 @@ p{
 
 
 #Wrapper {
-    max-width: 1080px;
+    max-width: 100%;
     padding: 40px;
     margin: auto;
     /*display: flex;
     flex-direction: column;
     height: calc(100vh - 80px);*/
-
 }
+
+.TextWrapper{
+    max-width: 1080px;
+}
+
 
 ul {
     list-style-type: none;
