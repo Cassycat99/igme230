@@ -87,6 +87,127 @@ nav ul a:hover {
     font-weight: 600;
 }
 
+/*HAMBURGER MENU MODIFIED FROM PAST PROJECT*/
+.menu{
+    width:100px;
+    height:100px;
+    background-color:#444;
+    transition:height .2s ease-out, width .2s ease-out,background-color 1s;
+    margin:20px;
+    position:absolute;
+    border-radius:4px;
+    overflow:hidden;
+  }
+  
+  /* hover over menu */
+  .menu:hover{
+    height:400px;
+    width:400px;
+    background-color:#bada55;
+    transition:height .2s ease-out,width .2s ease-out, background-color 1s;
+  }
+  
+  /* set nav links to invisible */
+  .menu nav{
+    display:none;
+  }
+  
+  /* style nav links */
+  .menu nav a{
+    color:#fff;
+    text-decoration:none;
+    display:block;
+    margin:0px;
+    padding:30px;
+    text-align:center;
+    font-family:Roboto,Helvetia,Arial,sans;
+    transition: background-color .2s linear;
+  }
+  
+  
+  
+  /* display nav */ 
+  .menu:hover nav{
+    display:block;
+  }
+  
+  /* Burger Menu */
+  .burger{
+    width:40px;
+    height:4px;
+    background-color:#fff;
+    position:absolute;
+    top:58px;
+    left:50%;
+    margin-left:-20px;
+    opacity:1;
+    transition: all .2s ease-out;
+    transition-delay: .2s;
+  }
+  
+  /* joint styles for the before and after bars, the "buns" */
+  .burger:before, .burger:after{
+    display:block;
+    content: "";
+    width:40px;
+    height:4px;
+    left:0;
+    background-color:#fff;
+    transition: all .2s ease-out;
+  }
+  
+  .burger:before{
+    position:absolute;
+    top:-20px;
+    transition-delay: .5s;
+  }
+  
+  .burger:after{
+    position:absolute;
+    top:-10px;
+    transition-delay: .4s;
+  }
+  
+  /* hover states */
+  .menu:hover .burger:before{
+    opacity:0;
+    top: -120px;
+  
+  }
+  
+  .menu:hover .burger:after{
+    opacity:0;
+    top: -110px;
+  }
+  
+  .menu:hover .burger{
+    opacity:0;
+    top:-100px;
+    transition:none;
+  }
+  
+  .menu nav a {
+    opacity:0;
+  }
+  
+  
+  .menu:hover nav a {
+    opacity:1;
+    transition: opacity .2s ease-out 1s;
+  }
+  
+  
+  /* style nav links on hover*/
+  .menu:hover nav a:hover{
+    opacity:1;
+    background-color:#333;
+    transition: background-color .2s linear;
+  }
+
+  /*END OF HAMBURGER MENU*/
+
+  
+
 section {
     margin: 48px 0px 48px 0px;
     height: 400px;
