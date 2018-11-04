@@ -2,18 +2,25 @@
     box-sizing: border-box;
 }
 
-
-#Wrapper {
-    max-width: 1080px;
-    margin: 40px;
-    /*display: flex;
-    flex-direction: column;
-    height: calc(100vh - 80px);*/
-
-}
-
+/*FONTS*/
 h1, h2, h3, h4, h5, ul {
     font-family: 'Hind Madurai', sans-serif;
+}
+
+p{  
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+
+
+#Wrapper {
+    max-width: 100%;
+    padding: 40px;
+    margin: auto;
+}
+
+.TextWrapper{
+    max-width: 1080px;
 }
 
 
@@ -24,7 +31,6 @@ ul {
 ul a {
     text-decoration: none;
 }
-
 
 header {
     display: flex;
@@ -37,6 +43,7 @@ header {
     color: #336d8e;
     text-decoration: none;
     font-family: 'Hind Madurai', sans-serif;
+    font-weight: bold;
 }
 
 nav .ActiveLink {
@@ -66,14 +73,32 @@ section {
     width: auto;
     background-color: aliceblue;
     display: flex;
-    justify-content: flex-end;
-    min-width: 500px;
+    justify-content: center;
+    min-width: 700px;
+}
+
+section ul{
+    align-self: center;
+    padding: 0px 40px 0px 0px;
+    min-width: 140px;
+}
+
+section .type{
+    padding-bottom: 40px;
 }
 
 .ImgHolder {
     width: 400px;
     height: 300px;
     background-color: beige;
+    align-self: center;
+    margin-right: 146px;
+}
+
+#MedicalMockUp{
+    max-width: 100%;
+    width: 400px;
+    height: 300px;
     align-self: center;
     margin-right: 146px;
 }
@@ -101,5 +126,14 @@ footer {
 h5 {
     margin: 0px;
     min-width: 300px;
+    color: #336d8e;
+}
+
+.Type{
+    margin-bottom: 20px;
+}
+
+.ProjectTitle{
+    font-weight: Bold;
     color: #336d8e;
 }
