@@ -160,8 +160,16 @@ h5 {
     color: #336d8e;
 }
 
+.menu, .burger{
+    display: none;
+}
 
 @media only screen and (max-width: 600px) {
+
+.menu, .burger{
+        display: unset;
+}
+
 
 /*HAMBURGER MENU MODIFIED FROM PAST PROJECT*/
 .menu{
