@@ -169,6 +169,10 @@ h5 {
 
 /*MEDIA QUERY....................................................*/
 @media only screen and (max-width: 800px) {
+    
+.ExpandedNav{
+    display: none;
+}
 
 .menu, .burger{
         display: unset;
