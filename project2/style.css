@@ -224,8 +224,9 @@ a{
   #HamburgerMenu .line {
     position: absolute;
     display: block;
-    background: #3d3d3d;
-    width: 22px;
+    background: #336d8e;
+    width: 24px;
+    height: 3px;
     height: .15rem;
     border-radius: .2rem;
     left: 0;
@@ -233,18 +234,17 @@ a{
   }
   
   #HamburgerMenu .line-1 {
-    top: 20px;
+    top: 34px;
   
   }
   
   #HamburgerMenu .line-2 {
-    top: 27px;
-    width: 22px;
+    top: 41px;
+    width: 28px;
   }
   
   #HamburgerMenu .line-3 {
-    top: 34px;
-  }
+    top: 48px;
   
   input[type=checkbox]:checked ~ label .line-1 {
     top: 0px;
