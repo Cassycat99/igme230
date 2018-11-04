@@ -125,6 +125,7 @@ section .type{
     margin-right: 146px;
 }
 
+/*
 section ul {
     display: flex;
     flex-direction: column;
@@ -140,6 +141,7 @@ section ul li.Type {
     font-size: .8em;
     padding: 0px 0px 24px 16px;
 }
+*/
 
 footer {
 
