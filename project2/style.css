@@ -145,7 +145,7 @@ h5 {
     color: #336d8e;
 }
 
-.menu, .burger{
+#HamburgerMenu{
     display: none;
 }
 
@@ -153,11 +153,11 @@ h5 {
 /*MEDIA QUERY....................................................*/
 @media only screen and (max-width: 800px) {
     
-.ExpandedNav{
+#ExpandedNav{
     display: none;
 }
 
-.menu, .burger{
+#HamburgerMenu{
         display: unset;
 }
 
