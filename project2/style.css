@@ -220,7 +220,7 @@ nav ul{
   .burger{
     width:40px;
     height:4px;
-    background-color: color: #336d8e;
+    background-color: #336d8e;
     position:absolute;
     top:58px;
     left:50%;
@@ -237,7 +237,7 @@ nav ul{
     width:40px;
     height:4px;
     left:0;
-    background-color: color: #336d8e;
+    background-color: #336d8e;
     transition: all .2s ease-out;
   }
   
