@@ -72,6 +72,7 @@ header {
 
 #ExpandedNav nav ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 300px;
     margin: 0px;
