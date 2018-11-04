@@ -151,7 +151,7 @@ h5 {
 
 
 /*MEDIA QUERY....................................................*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 650px) {
     
 #ExpandedNav{
     display: none;
@@ -170,7 +170,8 @@ nav ul{
 #HamburgerMenu{
     display: flex;
     justify-content: flex-end;
-    margin-right: 40px;
+    margin-right: 20px;
+    margin-top: -60px;
 }
 
 .menu{
