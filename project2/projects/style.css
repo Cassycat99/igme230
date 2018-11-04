@@ -141,15 +141,18 @@ h5 {
 
 /*CUSTOM CSS NOT ON HOME CSS*/
 
-.SixPhotos{
+.ThreePhotos{
     display: flex;
-    max-width: 100%;
+    max-width: 1080px;
     background-color: red;
-    height:500px;
+    flex-wraap: wrap;
+    align-items: center;
+    justify-content: space-around;
 }
 
 .Wireframe{
-    max-width: 100%;
-    justify-content: space-around;
-    flex-wrap: wrap;
+   // max-width: 100%;
+   // justify-content: space-around;
+   // flex-wrap: wrap;
+   max-width: 200px;
 }
