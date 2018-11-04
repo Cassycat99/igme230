@@ -285,7 +285,7 @@ nav ul{
   /* style nav links on hover*/
   .menu:hover nav a:hover{
     opacity:1;
-    background-color:  #336d8e;
+    background-color:  white;
     transition: background-color .2s linear;
   }
 
