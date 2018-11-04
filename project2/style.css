@@ -164,12 +164,12 @@ h5 {
         display: unset;
 }
 
-nav ul{
+#HamburgerMenu nav ul{
     flex-direction: column;
 }
 
 
-/*HAMBURGER MENU MODIFIED FROM PAST PROJECT*/
+/*HAMBURGER MENU*/
 #HamburgerMenu{
     display: flex;
     justify-content: flex-end;
@@ -177,119 +177,100 @@ nav ul{
     margin-top: -60px;
 }
 
-.menu{
-    width:100px;
-    height:100px;
-    transition:height .2s ease-out, width .2s ease-out,background-color 1s;
-    margin:20px;
-    position:absolute;
-    border-radius:4px;
-    overflow:hidden;
+a{
+    cursor: pointer;
+  }
+
+  input[type=checkbox] {
+    display: none;
   }
   
-  /* hover over menu */
-  .menu:hover{
-    height:100vh;
-    width:100vw;
-    background-color: white;
-    transition:height .2s ease-out,width .2s ease-out, background-color 1s;
+  #HamburgerMenu nav ul {
+    max-height: 0px;
+    overflow: hidden;
+    list-style: none;
+    transition: all 1s cubic-bezier(.325, 1, .22, 1);
   }
   
-  /* set nav links to invisible */
-  .menu nav{
-    display:none;
+  #HamburgerMenu nav li {
+    border-bottom: .18rem solid #fff;
+    color: #fff;
+    font-size: 16px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
   }
   
-  /* style nav links */
-  .menu nav a{
-    color: color: #336d8e;
-    text-decoration:none;
-    display:block;
-    margin:0px;
-    padding:30px;
-    text-align:center;
-    font-family:Roboto,Helvetia,Arial,sans;
-    transition: background-color .2s linear;
+  #HamburgerMenu nav li:last-of-type {
+    margin-bottom: .625rem;
   }
   
-  
-  
-  /* display nav */ 
-  .menu:hover nav{
-    display:block;
+  #HamburgerMenu nav li a {
+    font-family: Nunito;
+    text-decoration: none;
   }
   
-  /* Burger Menu */
-  .burger{
-    width:40px;
-    height:4px;
-    background-color: #336d8e;
-    position:absolute;
-    top:58px;
-    left:50%;
-    margin-left:-20px;
-    opacity:1;
-    transition: all .2s ease-out;
-    transition-delay: .2s;
+  #HamburgerMenu nav li a:hover{
+    text-decoration: underline;
   }
   
-  /* joint styles for the before and after bars, the "buns" */
-  .burger:before, .burger:after{
-    display:block;
-    content: "";
-    width:40px;
-    height:4px;
-    left:0;
-    background-color: #336d8e;
-    transition: all .2s ease-out;
+  input[type=checkbox]:checked ~ nav ul {
+    height: auto;
+    max-height: 12rem;
+    transition: all 1s cubic-bezier(.5, 1, .22, 1);
   }
   
-  .burger:before{
-    position:absolute;
-    top:-20px;
-    transition-delay: .5s;
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 18px;
+    right: 13px;
+    height: 27px;
+    width: 27px;
+    cursor: pointer;
+    transition: all 1s cubic-bezier(.19, 1, .22, 1);
   }
   
-  .burger:after{
-    position:absolute;
-    top:-10px;
-    transition-delay: .4s;
+  .line {
+    position: absolute;
+    display: block;
+    background: #3d3d3d;
+    width: 18px;
+    height: .15rem;
+    border-radius: .2rem;
+    left: 0;
+    transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
   }
   
-  /* hover states */
-  .menu:hover .burger:before{
-    opacity:0;
-    top: -120px;
-  
+  .line-1 {
+    top: 0;
   }
   
-  .menu:hover .burger:after{
-    opacity:0;
-    top: -110px;
+  .line-2 {
+    top: 7px;
+    width: 14px;
+    transform: translateX(2px);
+    -webkit-transform: translateX(2px);
   }
   
-  .menu:hover .burger{
-    opacity:0;
-    top:-100px;
-    transition:none;
+  .line-3 {
+    top: 14px;
   }
   
-  .menu nav a {
-    opacity:0;
+  input[type=checkbox]:checked ~ label .line-1 {
+    top: 0px;
+    width: 22px;
+    transform: translateX(-11px) rotate(-45deg) translateY(12px);
   }
   
-  
-  .menu:hover nav a {
-    opacity:1;
-    transition: opacity .2s ease-out 1s;
+  input[type=checkbox]:checked ~ label .line-2 {
+    opacity: 0;
   }
   
-  
-  /* style nav links on hover*/
-  .menu:hover nav a:hover{
-    opacity:1;
-    background-color:  white;
-    transition: background-color .2s linear;
+  input[type=checkbox]:checked ~ label .line-3 {
+    top: 14px;
+    width: 22px;
+    transform: translateX(-8px) rotate(45deg) translateY(-8px);
   }
 
   /*END OF HAMBURGER MENU*/
