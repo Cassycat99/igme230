@@ -141,7 +141,7 @@ h5 {
 
 /*CUSTOM CSS NOT ON HOME CSS*/
 
-.ThreePhotos{
+.FlexPhotos{
     display: flex;
     max-width: 1080px;
     background-color: red;
@@ -150,8 +150,13 @@ h5 {
     flex-direction: row;
 }
 
-.Wireframe{
+.Wireframe, .FinalLarge{
     width: 33%;
+    padding: 1px 1px 0px 1px;
+}
+
+.Final{
+    width: 50%;
     padding: 1px 1px 0px 1px;
 }
 
@@ -161,7 +166,7 @@ h5 {
         flex-flow: column-wrap;
     }
 
-    .Wireframe{
+    .Wireframe, .Final, .FinalLarge{
         width: 100%;
     }
 
