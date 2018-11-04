@@ -16,15 +16,20 @@ h1, #Name{
 }
 
 h2{
-    font-size: .8em;
+    font-size: 1.6em;
 }
 
-h3{
-    font-size: .6em;
+h3, ul, #Name{
+    font-size: 1.2em;
 }
 
 h4{
-    font-size: 5em;
+    font-size: 1em;
+}
+
+h5{
+    font-size: 1em;
+    line-height: 1.5em;
 }
 
 #Wrapper {
