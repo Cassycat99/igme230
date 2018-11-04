@@ -166,10 +166,16 @@ h5 {
     display: none;
 }
 
+
+/*MEDIA QUERY....................................................*/
 @media only screen and (max-width: 800px) {
 
 .menu, .burger{
         display: unset;
+}
+
+nav ul{
+    flex-direction: column;
 }
 
 
