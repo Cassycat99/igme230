@@ -200,6 +200,7 @@ nav ul{
   .menu:hover{
     height:400px;
     width:400px;
+    background-color: white;
     transition:height .2s ease-out,width .2s ease-out, background-color 1s;
   }
   
@@ -296,7 +297,7 @@ nav ul{
   /* style nav links on hover*/
   .menu:hover nav a:hover{
     opacity:1;
-    background-color:#333;
+    background-color:aliceblue;
     transition: background-color .2s linear;
   }
 
