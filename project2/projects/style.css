@@ -144,6 +144,8 @@ h5 {
 .SixPhotos{
     display: flex;
     max-width: 100%;
+    background-color: red;
+    height:500px;
 }
 
 .Wireframe{
