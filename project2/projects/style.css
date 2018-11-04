@@ -160,6 +160,32 @@ h5 {
     padding: 1px 1px 0px 1px;
 }
 
+.ProjectTitle, .Type{
+    opacity: 0.5;
+}
+
+#ActiveProjectTitle{
+    font-weight: 1.2em;
+    opacity: 1.0;
+}
+
+#ActiveType{
+    font-weight: 1.2em;
+    opacity: 1.0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 600px) {
 
     .ThreePhotos{
@@ -169,5 +195,6 @@ h5 {
     .Wireframe, .Final, .FinalLarge{
         width: 100%;
     }
+
 
 }
