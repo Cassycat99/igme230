@@ -144,7 +144,6 @@ h5 {
 .FlexPhotos{
     display: flex;
     max-width: 1080px;
-    background-color: red;
     flex-wrap: wrap;
     align-items: flex-start;
     flex-direction: row;
