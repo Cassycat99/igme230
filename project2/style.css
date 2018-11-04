@@ -188,7 +188,7 @@ h5 {
   
   /* style nav links */
   .menu nav a{
-    color:#fff;
+    color:rgb(0, 0, 0);
     text-decoration:none;
     display:block;
     margin:0px;
@@ -209,7 +209,7 @@ h5 {
   .burger{
     width:40px;
     height:4px;
-    background-color:#fff;
+    background-color:rgb(0, 0, 0);
     position:absolute;
     top:58px;
     left:50%;
@@ -226,7 +226,7 @@ h5 {
     width:40px;
     height:4px;
     left:0;
-    background-color:#fff;
+    background-color:rgb(0, 0, 0);
     transition: all .2s ease-out;
   }
   
