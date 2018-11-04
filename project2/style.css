@@ -167,7 +167,6 @@ h5 {
 .menu{
     width:100px;
     height:100px;
-    background-color:#444;
     transition:height .2s ease-out, width .2s ease-out,background-color 1s;
     margin:20px;
     position:absolute;
@@ -179,7 +178,6 @@ h5 {
   .menu:hover{
     height:400px;
     width:400px;
-    background-color:#bada55;
     transition:height .2s ease-out,width .2s ease-out, background-color 1s;
   }
   
