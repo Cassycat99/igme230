@@ -170,11 +170,6 @@ h5 {
 
 
 /*HAMBURGER MENU*/
-#HamburgerMenu{
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 20px;
-}
 a{
     cursor: pointer;
   }
@@ -190,9 +185,7 @@ a{
   }
   
   #HamburgerMenu nav li {
-    border-bottom: .18rem solid #fff;
-    color: #fff;
-    font-size: 16px;
+    font-size: 1em;
     padding: 5px 0;
     display: flex;
     justify-content: center;
@@ -208,7 +201,7 @@ a{
     display: block;
     position: absolute;
     top: 40px;
-    right: 13px;
+    right: 40px;
     height: 27px;
     width: 27px;
     cursor: pointer;
