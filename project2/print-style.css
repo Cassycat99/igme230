@@ -39,4 +39,9 @@ h5{
 header, footer{
     display: none;
 }
+
+#Name{
+    color:white;
+}
+
 }
