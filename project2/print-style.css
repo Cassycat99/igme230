@@ -1,49 +1,12 @@
 
 @media print{
 
-h1, h2, h3, h4, h5, ul {
-    font-family: 'Hind Madurai', sans-serif;
-}
-
-p{  
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 10px;
-}
-
-h1, #Name{
-    font-size: 16px;
-}
-
-h2{
-    font-size: 14px;
-}
-
-#experience{
-    margin-top: -25px;
-}
-
-h3, ul, #Name{
-    font-size: 14px;
-}
-
-h3{
-    margin-top: 55px;
-}
-
-h4{
-    font-size: 12px;
-}
-
-h5{
-    font-size: 12px;
-}
-
-header, footer{
-    display: none;
-}
-
-#Name{
-    color:white;
-}
+    header, footer, h1, h2, h3, h4, h5, p, #Name{
+        display: none; /*removes extra text*/
+    }
+    
+    #Resume{
+        margin-top: -100px; /*lines resume up with top*/
+    }
 
 }
