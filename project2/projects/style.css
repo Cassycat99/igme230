@@ -188,7 +188,7 @@ h5 {
 
 .ProjectTitle, .Type{
     opacity: 0.5;
-    font-weight: 1.0em;
+    font-size: 1.0em;
 }
 
 #ActiveProjectTitle{
@@ -219,6 +219,7 @@ figcaption{
     #MedicalMockUp{
      margin-right: 60px;
    }
+}
    
    @media only screen and (max-width: 740px) {
        
@@ -374,7 +375,7 @@ a{
 @media only screen and (max-width: 600px) {
 
     .FlexPhotos{
-        flex-flow: column-wrap;
+        flex-flow: column wrap;
     }
 
     .Wireframe, .Final, .FinalLarge, .ReporterLarge{
