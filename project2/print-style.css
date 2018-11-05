@@ -3,39 +3,42 @@
 }
 
 /*FONTS..............................*/
-@media print h1, h2, h3, h4, h5, ul {
+@media print{
+
+h1, h2, h3, h4, h5, ul {
     font-family: 'Hind Madurai', sans-serif;
 }
 
-@media print p{  
+p{  
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2em;
 }
 
-@media print h1, #Name{
+h1, #Name{
     font-size: 24px;
 }
 
-@media print h2{
+h2{
     font-size: 1.6em;
     margin-top: 55px;
 }
 
-@media print h3, ul, #Name{
+h3, ul, #Name{
     font-size: 1.2em;
 }
 
-@media print h3{
+h3{
     margin-top: 55px;
 }
 
-@media print h4{
+h4{
     font-size: 1em;
 }
 
-@media print h5{
+h5{
     font-size: 1em;
     line-height: 1.5em;
+}
 }
 /*end of fonts......................................*/
 
