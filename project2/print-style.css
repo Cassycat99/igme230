@@ -3,37 +3,37 @@
 }
 
 /*FONTS..............................*/
-h1, h2, h3, h4, h5, ul {
+@media print h1, h2, h3, h4, h5, ul {
     font-family: 'Hind Madurai', sans-serif;
 }
 
-p{  
+@media print p{  
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2em;
 }
 
-h1, #Name{
-    font-size: 32px;
+@media print h1, #Name{
+    font-size: 24px;
 }
 
-h2{
+@media print h2{
     font-size: 1.6em;
-    margin-top: 75px;
+    margin-top: 55px;
 }
 
-h3, ul, #Name{
+@media print h3, ul, #Name{
     font-size: 1.2em;
 }
 
-h3{
-    margin-top: 75px;
+@media print h3{
+    margin-top: 55px;
 }
 
-h4{
+@media print h4{
     font-size: 1em;
 }
 
-h5{
+@media print h5{
     font-size: 1em;
     line-height: 1.5em;
 }
