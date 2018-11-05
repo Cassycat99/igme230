@@ -234,7 +234,7 @@ h5 {
 #ExpandedNav{
     display: none;
 }
-#HamburgerMenu, .dropdown, #checkbox_toggle, .hamburger, .line-1, .line-2, .line-3, #HamburgerMenu nav, #HamburgerMenu nav ul, #HamburgerMenu nav ul a{
+#HamburgerMenu, .dropdown, .hamburger, .line-1, .line-2, .line-3, #HamburgerMenu nav, #HamburgerMenu nav ul, #HamburgerMenu nav ul a{
     display: block;
 }
 
