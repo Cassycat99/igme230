@@ -286,3 +286,13 @@ a{
   }
   /*END OF HAMBURGER MENU*/
 }
+
+@media only screen and (max-width: 450px) {
+  
+    #MedicalMockUp{
+     width: 300px;
+     height: auto;
+    }
+
+    
+}
