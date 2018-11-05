@@ -113,13 +113,6 @@ section .type{
     padding-bottom: 40px;
 }
 
-.ImgHolder {
-    width: 400px;
-    height: 300px;
-    background-color: beige;
-    align-self: center;
-    margin-right: 146px;
-}
 
 #MedicalMockUp{
     max-width: 100%;
@@ -148,12 +141,31 @@ h5 {
     color: #336d8e;
 }
 
-#HamburgerMenu{
+#HamburgerMenu, .dropdown, #checkbox_toggle, .hamburger, .line-1, line-2, .line-3, #HamburgerMenu nav, #HamburgerMenu nav ul, #HamburgerMenu nav ul a{
     display: none;
 }
 
 
 /*MEDIA QUERY....................................................*/
+@media only screen and (max-width: 840px) {
+    
+    #MedicalMockUp{
+     margin-right: 60px;
+   }
+   
+   @media only screen and (max-width: 740px) {
+       
+   section {
+     flex-direction: column;
+     height: 800px;
+   }
+   
+    #MedicalMockUp{
+     order: 2;
+   }
+}
+
+
 @media only screen and (max-width: 650px) {
     
 #ExpandedNav{
@@ -220,7 +232,7 @@ a{
     left: 0;
     transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
   }
-  
+
   #HamburgerMenu .line-1 {
     top: 2px;
     height: 3px;
