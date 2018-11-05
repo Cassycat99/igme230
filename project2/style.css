@@ -132,6 +132,10 @@ section .type{
     margin-right: 146px;
 }
 
+.Profile{
+    float: right;
+}
+
 footer {
     padding: 40px 40px 0px 40px;
 
