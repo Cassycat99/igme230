@@ -15,7 +15,10 @@ h1, #Name{
 }
 
 h2{
-    font-size: 1.2em;
+    font-size: 1.0em;
+}
+
+#experience{
     margin-top: -25px;
 }
 
