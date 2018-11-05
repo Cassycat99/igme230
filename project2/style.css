@@ -152,7 +152,9 @@ h5 {
     display: none;
 }
 
-
+#Resume{
+    display: none;
+}
 
 
 /*MEDIA QUERY....................................................*/

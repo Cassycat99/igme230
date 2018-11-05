@@ -6,6 +6,8 @@
     }
     
     #Resume{
+        display: block;
+        width: 90%;
         margin-top: -100px; /*lines resume up with top*/
     }
 
