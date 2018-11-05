@@ -261,6 +261,8 @@ figcaption{
     display: flex;
     flex-direction: column;
     align-content: center;
+    padding-top: 50px;
+    margin-left: -60px;
 }
 
 
