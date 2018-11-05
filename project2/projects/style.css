@@ -44,6 +44,7 @@ h5{
 .TextWrapper{
     max-width: 1080px;
     margin: auto;
+    padding: 0px 40px 0px 40px;
 }
 
 
