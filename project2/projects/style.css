@@ -2,13 +2,14 @@
     box-sizing: border-box;
 }
 
-/*FONTS*/
+/*FONTS..............................*/
 h1, h2, h3, h4, h5, ul {
     font-family: 'Hind Madurai', sans-serif;
 }
 
 p{  
     font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1.2em;
 }
 
 h1, #Name{
@@ -31,6 +32,8 @@ h5{
     font-size: 1em;
     line-height: 1.5em;
 }
+/*end of fonts......................................*/
+
 
 #Wrapper {
     max-width: 100%;
@@ -66,12 +69,13 @@ header {
     font-weight: bold;
 }
 
-nav .ActiveLink {
+#ExpandedNav nav .ActiveLink {
     font-weight: bold;
 }
 
-nav ul {
+#ExpandedNav nav ul {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 300px;
     margin: 0px;
@@ -79,13 +83,15 @@ nav ul {
     padding: 0px;
 }
 
-nav ul a {
+#ExpandedNav nav ul a {
     color: #336d8e;
 }
 
 nav ul a:hover {
     font-weight: 600;
 }
+
+
 
 section {
     margin: 48px 0px 48px 0px;
@@ -107,13 +113,6 @@ section .type{
     padding-bottom: 40px;
 }
 
-.ImgHolder {
-    width: 400px;
-    height: 300px;
-    background-color: beige;
-    align-self: center;
-    margin-right: 146px;
-}
 
 #MedicalMockUp{
     max-width: 100%;
@@ -121,22 +120,6 @@ section .type{
     height: 300px;
     align-self: center;
     margin-right: 146px;
-}
-
-banner ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0px 96px 0px 0px;
-}
-
-banner ul li {
-    padding: 16px 16px 8px 16px;
-}
-
-banner ul li.Type {
-    font-size: .8em;
-    padding: 0px 0px 24px 16px;
 }
 
 footer {
@@ -156,6 +139,165 @@ h5 {
 .ProjectTitle{
     font-weight: Bold;
     color: #336d8e;
+}
+
+#HamburgerMenu, .dropdown, #checkbox_toggle, .hamburger, .line-1, line-2, .line-3, #HamburgerMenu nav, #HamburgerMenu nav ul, #HamburgerMenu nav ul a{
+    display: none;
+}
+
+.delay{
+    display: none;
+}
+
+
+/*MEDIA QUERY....................................................*/
+@media only screen and (max-width: 840px) {
+    
+    #MedicalMockUp{
+     margin-right: 60px;
+   }
+   
+   @media only screen and (max-width: 740px) {
+       
+   section {
+    flex-direction: column;
+     height: 600px;
+     justify-content: flex-start;
+     align-content: space-around;
+     width: 100%;
+     min-width: 300px;
+   }
+   
+    #MedicalMockUp{
+     order: 2;
+     margin: 0px;
+   }
+
+   section ul{
+     padding-top: 20px;
+     margin: 0px;
+   }
+}
+
+
+@media only screen and (max-width: 650px) {
+    
+#ExpandedNav{
+    display: none;
+}
+#HamburgerMenu, .dropdown, #checkbox_toggle, .hamburger, .line-1, line-2, .line-3, #HamburgerMenu nav, #HamburgerMenu nav ul, #HamburgerMenu nav ul a{
+    display: block;
+}
+
+.delay{
+        display: block;
+}
+
+#HamburgerMenu nav ul{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+
+/*HAMBURGER MENU*/
+a{
+    cursor: pointer;
+  }
+  input[type=checkbox] {
+    display: none;
+  }
+  
+   nav ul {
+    max-height: 0px;
+    overflow: hidden;
+    list-style: none;
+    transition: all 1s cubic-bezier(.325, 1, .22, 1);
+  }
+  
+  #HamburgerMenu nav li {
+    font-size: 1em;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+  }  
+  
+  input[type=checkbox]:checked ~ nav ul {
+    height:  calc(100vh - 60px);
+    max-height: 100vh;
+    margin: auto;
+    transition: all 1s cubic-bezier(.5, 1, .22, 1);
+  }
+  
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    height: 27px;
+    width: 27px;
+    cursor: pointer;
+    transition: all 1s cubic-bezier(.19, 1, .22, 1);
+  }
+  
+  #HamburgerMenu .line {
+    position: absolute;
+    display: block;
+    background: #336d8e;
+    width: 28px;
+    height: 3px;
+    height: .15rem;
+    border-radius: .2rem;
+    left: 0;
+    transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
+  }
+
+  #HamburgerMenu .line-1 {
+    top: 2px;
+    height: 3px;
+  
+  }
+  
+  #HamburgerMenu .line-2 {
+    top: 10px;
+    width: 28px;
+    height: 3px;
+  }
+  
+  #HamburgerMenu .line-3 {
+    top: 18px;
+    height: 3px;
+  }
+  
+  input[type=checkbox]:checked ~ label .line-1 {
+    top: 0px;
+    width: 28px;
+    transform: translateX(-12px) rotate(-45deg) translateY(13px);
+  }
+  
+  input[type=checkbox]:checked ~ label .line-2 {
+    opacity: 0;
+  }
+  
+  input[type=checkbox]:checked ~ label .line-3 {
+    top: 14px;
+    width: 22px;
+    transform: translateX(-9px) rotate(45deg) translateY(-9px);
+  }
+  /*END OF HAMBURGER MENU*/
+}
+
+@media only screen and (max-width: 450px) {
+  
+    #MedicalMockUp{
+     width: 300px;
+     height: auto;
+    }
+
+    section{
+        height: 450px;
+      }
+    
 }
 
 
