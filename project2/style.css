@@ -218,6 +218,7 @@ a{
   }
   
    nav ul {
+    color: #336d8e;
     max-height: 0px;
     overflow: hidden;
     list-style: none;
