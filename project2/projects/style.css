@@ -150,6 +150,49 @@ h5 {
 }
 
 
+/*CUSTOM CSS NOT ON HOME CSS*/
+
+.FlexPhotos{
+    display: flex;
+    max-width: 1080px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.Wireframe, .FinalLarge{
+    width: 33%;
+    padding: 1px 1px 0px 1px;
+}
+
+.Final{
+    width: 50%;
+    padding: 1px 1px 0px 1px;
+}
+
+.ProjectTitle, .Type{
+    opacity: 0.5;
+    font-weight: 1.0em;
+}
+
+#ActiveProjectTitle{
+    font-size: 1.2em;
+    opacity: 1.0;
+}
+
+#ActiveType{
+    font-size: 1.2em;
+    opacity: 1.0;
+}
+
+.ProjectTitle:hover{
+    opacity: 1.0;
+}
+
+
+
+/*.............*/
+
 /*MEDIA QUERY....................................................*/
 @media only screen and (max-width: 840px) {
     
@@ -299,47 +342,6 @@ a{
       }
     
 }
-
-
-/*CUSTOM CSS NOT ON HOME CSS*/
-
-.FlexPhotos{
-    display: flex;
-    max-width: 1080px;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    flex-direction: row;
-}
-
-.Wireframe, .FinalLarge{
-    width: 33%;
-    padding: 1px 1px 0px 1px;
-}
-
-.Final{
-    width: 50%;
-    padding: 1px 1px 0px 1px;
-}
-
-.ProjectTitle, .Type{
-    opacity: 0.5;
-    font-weight: 1.0em;
-}
-
-#ActiveProjectTitle{
-    font-size: 1.2em;
-    opacity: 1.0;
-}
-
-#ActiveType{
-    font-size: 1.2em;
-    opacity: 1.0;
-}
-
-.ProjectTitle:hover{
-    opacity: 1.0;
-}
-
 
 
 
