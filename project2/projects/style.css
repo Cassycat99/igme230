@@ -188,7 +188,7 @@ h5 {
 
 .ProjectTitle, .Type{
     opacity: 0.5;
-    font-size: 1.0em;
+    font-weight: 1.0em;
 }
 
 #ActiveProjectTitle{
