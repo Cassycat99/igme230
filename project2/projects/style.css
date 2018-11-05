@@ -171,6 +171,16 @@ h5 {
     padding: 1px 1px 0px 1px;
 }
 
+.Reporter{
+    width: 50%;
+    padding: 1px 1px 0px 1px;
+}
+
+.ReporterLarge{
+    width: 100%;
+    padding: 1px 1px 0px 1px;
+}
+
 .Final{
     width: 50%;
     padding: 1px 1px 0px 1px;
@@ -368,9 +378,11 @@ figcaption{
         flex-flow: column-wrap;
     }
 
-    .Wireframe, .Final, .FinalLarge{
+    .Wireframe, .Final, .FinalLarge, .ReporterLarge{
         width: 100%;
     }
+
+
 
 
 }
