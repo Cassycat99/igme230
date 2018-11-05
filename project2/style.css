@@ -25,6 +25,10 @@ h3, ul, #Name{
     font-size: 1.2em;
 }
 
+h3{
+    margin-top: 75px;
+}
+
 h4{
     font-size: 1em;
 }
@@ -150,6 +154,8 @@ h5 {
 .delay{
     display: none;
 }
+
+
 
 
 /*MEDIA QUERY....................................................*/
