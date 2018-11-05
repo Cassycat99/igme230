@@ -160,12 +160,22 @@ h5 {
    @media only screen and (max-width: 740px) {
        
    section {
-     flex-direction: column;
-     height: 800px;
+    flex-direction: column;
+     height: 600px;
+     justify-content: flex-start;
+     align-content: space-around;
+     width: 100%;
+     min-width: 300px;
    }
    
     #MedicalMockUp{
      order: 2;
+     margin: 0px;
+   }
+
+   section ul{
+     padding-top: 20px;
+     margin: 0px;
    }
 }
 
