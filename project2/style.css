@@ -134,6 +134,7 @@ section .type{
 
 .Profile{
     float: right;
+    padding-left: 20px;
 }
 
 footer {
@@ -182,7 +183,7 @@ h5 {
     .Profile{
         float: left;
     }
-    
+
    section {
     flex-direction: column;
      height: 600px;
