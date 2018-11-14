@@ -126,24 +126,24 @@
 
         let color = $("#colorChooser").val(); //defines color
 
-        $(("#colorChooser").change(function () { 
-    color = $(this).val();  //event listener to change color
-});
+        $("#colorChooser").change(function () { 
+            color = $(this).val();  //event listener to change color
+            });
 
-    $("selector").click(function () { 
-    $(this).css("background-color", color); //event listener to change color on click
-});
+        $("selector").click(function () { 
+            $(this).css("background-color", color); //event listener to change color on click
+            });
 
-$("selector").mousedown(function () { 
-    $(this).css("background-color", color); //changes color on mouse drag
-});
+        $("selector").mousedown(function () { 
+            $(this).css("background-color", color); //changes color on mouse drag
+        });
 
-$("selector").mousedown(function () { 
-    $(this).css("background-color", color); //uses mousedown to change color
-    $("selector").mouseover(function () {
-        $(this).css("background-color", color); //uses mouseover to change colors
-    });
-});
+        $("selector").mousedown(function () { 
+            $(this).css("background-color", color); //uses mousedown to change color
+        $("selector").mouseover(function () {
+            $(this).css("background-color", color); //uses mouseover to change colors
+        });
+        });
 
     </script>
 </body>
