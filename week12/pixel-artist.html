@@ -2,51 +2,116 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>jQuery</title>
+    <meta charset="utf-8" />
+    <title>Pixel Arteur Grid / jQuery</title>
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Open Sans", Helvetica, Arial, sans-serif;
+        }
+
+        #wrapper {
+            min-height: 100vh;
+            display: grid;
+            grid-template-rows: 4rem auto;
+            grid-template-columns: 1fr auto 250px 1fr;
+            grid-gap: 1em;
+            background-color: #eee;
+        }
+
+        h1 {
+            grid-column-start: 2;
+            font-family: 'Press Start 2P', cursive;
+            font-size: 2rem;
+            justify-self: center;
+        }
+
+        #pixelGrid {
+            grid-row-start: 2;
+            grid-column-start: 2;
+            display: grid;
+            grid-gap: 1px;
+            justify-self: center;
+            margin: 1em;
+            background-color: #eee;
+        }
+
+        span.cell {
+            border: 1px solid purple;
+            background-color: #ccc;
+            padding: 0;
+            margin: 0;
+        }
+
+        span.cellSelected {
+            border: none;
+        }
+
+        #instructions {
+            grid-row-start: 2;
+            grid-column-start: 3;
+            padding-right: 1em;
+            justify-self: left;
+            max-width: 20rem;;
+        }
+
+        #colorChooser {
+            height: 1.5rem;
+            margin: 0; 
+            padding: 0;
+        }
+
+        #reset {
+            height: 1.5rem;
+            display: block;
+            margin: 1rem 0;
+            padding: 0;
+
+            
+        }
+    </style>
 </head>
 
-<style>
-    
-    #navpanel{
-        background-color: pink;
-        width: 200px;
-        height: 200px;
-    }
-
-</style>
-
 <body>
-    <button id="show">Show</button>
-    <button id="hide">Hide</button>
+    <div id="wrapper">
+        <h1>Pixel ArTeur</h1>
+        <div id="pixelGrid"></div>
 
-    <div id="navpanel">
-        <ul> 
-            <li>Link 1</li>
-            <li>Link 2</li>
-            <li>Link 3</li>
-        </ul>
+        <div id="instructions">
+            <p>Select a color, then click or drag across squares to change them to that color.</p>
+            <select id="colorChooser">
+                <option value="aqua">Aqua</option>
+                <option value="bisque">Bisque</option>
+                <option value="black">Black</option>
+                <option value="blue">Blue</option>
+                <option value="saddlebrown">Brown</option>
+                <option value="green">Dark Green</option>
+                <option value="lawngreen">Bright Green</option>
+                <option value="magenta">Magenta</option>
+                <option value="orange">Orange</option>
+                <option value="pink">Pink</option>
+                <option value="red" selected>Red</option>
+                <option value="white">White</option>
+                <option value="yellow">Yellow</option>
+            </select>
+            <button id="reset">Reset</button>
+        </div>
     </div>
-
     <script>
+     
 
-    $("#hide").click(function () {
-        $("#navpanel").hide(1500);
-    });
 
-    $("#show").click(function () {
-        $("#navpanel").show(10);
-    });
-    
-    
     </script>
-
-
 </body>
-
 
 </html>
