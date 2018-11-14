@@ -124,10 +124,14 @@
             $("#pixelGrid").append('<span class="cell"></span>'); //adds single elemento to the grid in for loop
         }
 
-        let color = $("putmenuselectorhere").val(); //defines color
+        let color = $("#colorChooser").val(); //defines color
 
-        $("putmenuselectorhere").change(function () { 
+        $(("#colorChooser").change(function () { 
     color = $(this).val();  //event listener to change color
+});
+
+    $("selector").click(function () { 
+    $(this).css("background-color", color); //event listener to change color on click
 });
 
 
