@@ -118,7 +118,11 @@
 
         pixelgrid.style.gridTemplateColumns = `repeat(${numCols},${cellSize}px)`;            // ES6 template string
         pixelgrid.style.gridTemplateColumns = `repeat(${numRows},${cellSize}px)`;
-        $("#pixelGrid").append('<span class="cell"></span>'); //adds single elemento to the grid
+
+
+        for (let i = 0; i < numCells; i++) {$("#pixelGrid").append('<span class="cell"></span>'); //adds single elemento to the grid in for loop
+        }
+
     </script>
 </body>
 
