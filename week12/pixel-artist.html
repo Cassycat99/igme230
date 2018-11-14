@@ -114,7 +114,7 @@
      const cellSize = 25; // specify dimension of cell square in px
      const numCells = numCols * numRows; // calculate total number of cells
 
-        let pixelgrid = document.querySelector("pixelGrid");
+        let pixelgrid = document.querySelector("#pixelGrid");
 
         pixelgrid.style.gridTemplateColumns = `repeat(${numCols},${cellSize}px)`;            // defining cols
         pixelgrid.style.gridTemplateRows = `repeat(${numRows},${cellSize}px)`; //defining rows
