@@ -116,8 +116,8 @@
 
         let pixelgrid = document.querySelector("pixelGrid");
 
-        pixelgrid.style.gridTemplateColumns = `repeat(${numCols},${cellSize}px)`;            // ES6 template string
-        pixelgrid.style.gridTemplateRows = `repeat(${numRows},${cellSize}px)`;
+        pixelgrid.style.gridTemplateColumns = `repeat(${numCols},${cellSize}px)`;            // defining cols
+        pixelgrid.style.gridTemplateRows = `repeat(${numRows},${cellSize}px)`; //defining rows
 
 
         for (let i = 0; i < numCells; i++) {
@@ -125,6 +125,12 @@
         }
 
         let color = $("putmenuselectorhere").val(); //defines color
+
+        $("putmenuselectorhere").change(function () { 
+    color = $(this).val();  //event listener to change color
+});
+
+
     </script>
 </body>
 
