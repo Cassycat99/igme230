@@ -139,8 +139,8 @@
         });
 
         $(".cell").mousedown(function () { 
-            $(this).css("background-color", color); //uses mousedown to change color
             event.preventDefault(); //prevents drag error
+            $(this).css("background-color", color); //uses mousedown to change color
         $(".cell").mouseover(function () {
             $(this).css("background-color", color); //uses mouseover to change colors
         });
