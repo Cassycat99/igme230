@@ -130,24 +130,24 @@
             color = $(this).val();  //event listener to change color
             });
 
-        $("selector").click(function () { 
+        $(".cell").click(function () { 
             $(this).css("background-color", color); //event listener to change color on click
             });
 
-        $("selector").mousedown(function () { 
+        $(".cell").mousedown(function () { 
             $(this).css("background-color", color); //changes color on mouse drag
         });
 
-        $("selector").mousedown(function () { 
+        $(".cell").mousedown(function () { 
             $(this).css("background-color", color); //uses mousedown to change color
             event.preventDefault(); //prevents drag error
-        $("selector").mouseover(function () {
+        $(".cell").mouseover(function () {
             $(this).css("background-color", color); //uses mouseover to change colors
         });
         });
 
         $(document).mouseup(function () {
-            $("selector").unbind("mouseover"); //unbinding mouseover
+            $(document).unbind("mouseover"); //unbinding mouseover
         });
 
     </script>
