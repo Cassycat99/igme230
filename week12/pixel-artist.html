@@ -117,12 +117,14 @@
         let pixelgrid = document.querySelector("pixelGrid");
 
         pixelgrid.style.gridTemplateColumns = `repeat(${numCols},${cellSize}px)`;            // ES6 template string
-        pixelgrid.style.gridTemplateColumns = `repeat(${numRows},${cellSize}px)`;
+        pixelgrid.style.gridTemplateRows = `repeat(${numRows},${cellSize}px)`;
 
 
-        for (let i = 0; i < numCells; i++) {$("#pixelGrid").append('<span class="cell"></span>'); //adds single elemento to the grid in for loop
+        for (let i = 0; i < numCells; i++) {
+            $("#pixelGrid").append('<span class="cell"></span>'); //adds single elemento to the grid in for loop
         }
 
+        let color = $("putmenuselectorhere").val(); //defines color
     </script>
 </body>
 
