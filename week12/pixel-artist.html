@@ -140,9 +140,14 @@
 
         $("selector").mousedown(function () { 
             $(this).css("background-color", color); //uses mousedown to change color
+            event.preventDefault(); //prevents drag error
         $("selector").mouseover(function () {
             $(this).css("background-color", color); //uses mouseover to change colors
         });
+        });
+
+        $(document).mouseup(function () {
+            $("selector").unbind("mouseover"); //unbinding mouseover
         });
 
     </script>
