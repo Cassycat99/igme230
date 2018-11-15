@@ -162,16 +162,17 @@
         /* JQuery for smooth scrolling (easier than native JS code)
            Found at https://stackoverflow.com/questions/7717527/smooth-scrolling-when-clicking-an-anchor-link */
 
-        $("a[href^='#']").click(function (event) {
-            event.preventDefault();
-            let target = $(this.hash);
-            $('html, body').animate({ scrollTop: target.offset().top }, 500);
+        $("a[href^='#']").click(function (event) { //will only pick up internal links, event = clicking on the link
+            event.preventDefault(); //overriding default behavior
+            let target = $(this.hash); //send event along with these instructions
+            $('html, body').animate({ scrollTop: target.offset().top }, 500); //animation is scroll the top of the page to the top of the target at a speed of 500
 
             // Make this more accessible by setting target.focus(); 
             // See https://css-tricks.com/smooth-scrolling-accessibility/ for details
 
+
             if (target.is(":focus")) { // Checking if the target was focused
-                return false;
+                return false; //accessibilty
             } else {
                 target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
                 target.focus(); // Setting focus
