@@ -595,8 +595,8 @@ a {
     }
     .projectContainer {
       margin: 0 auto;
-      height: 100vh;
-      width: 50vw;
+      height: 100%;
+      width: 100%;
       background: gray;
       padding: 0 40px;
     }
