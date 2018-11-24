@@ -42,14 +42,17 @@
     
         <img id="MedicalMockUp" src="images/medical_ui.png" alt="Medical UX">
     
-    <ul>
-        <li><a href="projects/uxDesign.html" class="ProjectTitle">MEDICAL INTERFACE</a></li>
-        <li class="Type">UX Design</li>
-        <li><a href="projects/graphicDesign.html" class="ProjectTitle">REPORTER MAGAZINE</a> </li>
-        <li class="Type">Graphic Design</li>
-        <li><a href="projects/infoDesign.html" class="ProjectTitle">SAVE OUR BEES</a> </li>
-        <li class="Type">Information Design</li>
-    </ul>
+        <div class="projectContainer">
+            <div class="hero__title" id="animatedHeading">
+              
+              <div class="slick-dupe"><span class="hero__title-misc  |  animate"><a href="https://www.w3schools.com">One</a></span></div>
+              
+              <div class="slick-dupe"><span class="hero__title-misc  |  animate"><a href="https://www.w3schools.com">Two</a></span></div>
+              
+              <div class="slick-dupe"><span class="hero__title-misc  |  animate"><a href="https://www.w3schools.com">Three</a></span></div>
+              
+            </div>
+            </div>
 </section>
 
 
@@ -73,4 +76,40 @@
   $('.menu').toggleClass('menu_active');
 });
 
+</script>
+
+<script>
+
+var titleMain  = $("#animatedHeading");
+var titleSubs  = titleMain.find("slick-active");
+
+if (titleMain.length) {
+
+  titleMain.slick({
+    autoplay: false,
+    arrows: false,
+    dots: false,
+    slidesToShow: 3,
+    centerPadding: "10px",
+    draggable: false,
+    infinite: true,
+    pauseOnHover: true,
+    swipe: false,
+    touchMove: false,
+    vertical: true,
+    speed: 3000,
+    autoplaySpeed: 2000,
+    useTransform: true,
+    cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1.000)',
+    adaptiveHeight: true,
+  });
+
+  // On init
+  $(".slick-dupe").each(function(index, el) {
+    $("#animatedHeading").slick('slickAdd', "<div>" + el.innerHTML + "</div>");
+  });
+
+  // Manually refresh positioning of slick
+  titleMain.slick('slickPlay');
+};
 </script>
