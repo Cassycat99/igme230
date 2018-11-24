@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+  <div class="click1"><p>Show Only 1</p></div>
+  <div class="click2"><p>Show Only 2</p></div>
+    <div class="click3"><p>Show Only 3<p></div>
+
+<p id="1" class="myClass1 hide"> 1.</p>
+<p id="2" class="myClass2 hide"> 2.</p>
+<p id="3" class="myClass3 hide"> 3.</p>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+<style>
+.hide {
+    display: none;
+}
+
+.click1{
+  background: purple;
+  width: 150px;
+  height:  50px;
+  margin: 25px;
+}
+
+.click2{
+  background: blue;
+  width: 150px;
+  height:  50px;
+  margin: 25px;
+}
+
+.click3{
+  background: red;
+  width: 150px;
+  height:  50px;
+  margin: 25px;
+}
+
+</style>
+
+<script>
+$(document).ready(function(){
+    $(".click1").click(function(){
+        $(".myClass1").toggleClass("hide");
+      
+       if ($('#2').hasClass('hide')){
+          }
+      else{
+       $("#2").toggleClass("hide");
+       }
+      
+       if ($('#3').hasClass('hide')){
+          }
+      else{
+       $("#3").toggleClass("hide");
+       }
+      
+    });
+});
+
+$(document).ready(function(){
+    $(".click2").click(function(){
+        $(".myClass2").toggleClass("hide");
+      
+      if ($('#1').hasClass('hide')){
+          }
+      else{
+       $("#1").toggleClass("hide");
+       }
+      
+       if ($('#3').hasClass('hide')){
+          }
+      else{
+       $("#3").toggleClass("hide");
+       }
+      
+    });
+});
+
+$(document).ready(function(){
+    $(".click3").click(function(){         
+        $(".myClass3").toggleClass("hide");
+      
+      if ($('#2').hasClass('hide')){
+          }
+      else{
+       $("#2").toggleClass("hide");
+       }
+      
+       if ($('#1').hasClass('hide')){
+          }
+      else{
+       $("#1").toggleClass("hide");
+       }
+      
+      
+     });
+});
+</script>
