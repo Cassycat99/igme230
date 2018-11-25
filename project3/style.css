@@ -456,3 +456,69 @@ a{
   transform: translate(-0%, 200%);
 }
 
+
+
+/* css for project lists..........................*/
+
+body {
+    margin: 0px;
+}
+
+#projects {
+    display: flex;
+    justify-content: space-around;
+    background-color: aliceblue;
+    width: 100vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hide {
+    display: none;
+}
+
+#click1 {
+    background: purple;
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+}
+
+#click2 {
+    background: blue;
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+}
+
+#click3 {
+    background: red;
+    width: 200px;
+    height: 200px;
+    margin: 25px;
+}
+
+main {
+    display: flex;
+    background-color: azure;
+    margin: 0px 40px;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+
+#2 {
+    justify-self: flex-start;
+}
+
+
+.imgHolder{
+    display: flex;
+    align-self: center;
+}
+
+img{
+    max-width: 200px;
+    align-self: center;
+    margin: auto;
+}

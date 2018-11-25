@@ -38,27 +38,30 @@
 
 </header>
 
-<section>
-    
-        <img id="MedicalMockUp" src="images/medical_ui.png" alt="Medical UX">
-    
-        <div class="projectContainer">
-            <div class="hero__title" id="animatedHeading">
-              
-              <div class="slick-dupe slick-active"><span class="hero__title-misc  |  animate"><a href="https://www.w3schools.com">One</a></span></div>
-              
-              <div class="slick-dupe"><span class="hero__title-misc  |  animate"><a href="https://www.w3schools.com">Two</a></span></div>
-              
-              <div class="slick-dupe"><span class="hero__title-misc  |  animate"><a href="https://www.w3schools.com">Three</a></span></div>
-              
-            </div>
-            </div>
-</section>
 
-
-<div class="TextWrapper">
-    
+<div id="projects">
+    <div id="click1">
+        <p>PROJECT 1</p>
+    </div>
+    <div id="click2">
+        <p>PROJECT 2</p>
+    </div>
+    <div id="click3">
+        <p>PROJECT 3<p>
+    </div>
 </div>
+
+<main>
+    <div id="1" class="myClass1 hide">
+        <p>1.This is the purple button.</p>
+        <div class="imgHolder"><img src="Cassy/Cassy/IMG_20180720_073345.jpg"></div>
+    </div>
+    <div id="2" class="myClass2 hide">
+        <p>2.This is the blue button.</p>
+    </div>
+    <div id="3" class="myClass3 hide"> <p>3.This is the red button. </p>
+    </div>
+</main>
 
 <footer>
     <h5>cls8313@rit.edu</h5>
@@ -79,5 +82,50 @@
 </script>
 
 <script>
+        $(document).ready(function() {
+        $("#click1").click(function() {
+            $(".myClass1").toggleClass("hide");
+
+            if ($('#2').hasClass('hide')) {} else {
+                $("#2").toggleClass("hide");
+            }
+
+            if ($('#3').hasClass('hide')) {} else {
+                $("#3").toggleClass("hide");
+            }
+
+        });
+    });
+
+    $(document).ready(function() {
+        $("#click2").click(function() {
+            $(".myClass2").toggleClass("hide");
+
+            if ($('#1').hasClass('hide')) {} else {
+                $("#1").toggleClass("hide");
+            }
+
+            if ($('#3').hasClass('hide')) {} else {
+                $("#3").toggleClass("hide");
+            }
+
+        });
+    });
+
+    $(document).ready(function() {
+        $("#click3").click(function() {
+            $(".myClass3").toggleClass("hide");
+
+            if ($('#2').hasClass('hide')) {} else {
+                $("#2").toggleClass("hide");
+            }
+
+            if ($('#1').hasClass('hide')) {} else {
+                $("#1").toggleClass("hide");
+            }
+
+
+        });
+    });
 
 </script>
