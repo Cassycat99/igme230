@@ -38,3 +38,25 @@ nav, aside {
 Your Formatting
 ***************/
 
+
+#wrapper{
+    display: grid;
+    width: 90vw;
+    min-height: 100hv;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    
+}
+
+@media only screen and (max-width: 600px) {
+
+
+    #wrapper{
+        width: 100vw;
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+}
+
