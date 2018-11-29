@@ -55,7 +55,7 @@ Your Formatting
 
 header, footer{
     display: flex;
-    justify-content: ceneter;
+    justify-content: center;
 }
 
 .menuitem{
@@ -66,7 +66,6 @@ header, footer{
 
 
 @media only screen and (max-width: 600px) {
-
 
     #wrapper{
         width: 100vw;
