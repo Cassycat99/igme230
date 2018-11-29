@@ -47,6 +47,9 @@ Your Formatting
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 4;
+    grid-template-rows: 4em 100% 3em;
+    grid-template-columns: 1/3fr 2/3fr 200px; 
+
     
 }
 
