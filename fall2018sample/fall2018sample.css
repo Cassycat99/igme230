@@ -42,6 +42,7 @@ Your Formatting
 #wrapper{
     display: grid;
     width: 90vw;
+    max-width: 1200px;
     min-height: 100hv;
     grid-column-start: 1;
     grid-column-end: 4;
