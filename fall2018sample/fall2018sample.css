@@ -53,6 +53,18 @@ Your Formatting
     
 }
 
+header, footer{
+    display: flex;
+    justify-content: ceneter;
+}
+
+.menuitem{
+    background-color: white;
+    border: 1px solid top white;
+}
+
+
+
 @media only screen and (max-width: 600px) {
 
 
