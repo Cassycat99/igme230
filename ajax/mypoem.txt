@@ -1,0 +1,32 @@
+<p id="verse1">She knows<br>
+Of those<br>
+Who do not care<br>
+For paws<br>
+And claws<br>
+And feline hair.</p>
+
+<p id="verse2">For kicks<br>
+She licks<br>
+The very one<br>
+Who tries<br>
+To rise<br>
+And deftly shun<br>
+The purr<br>
+The fur<br>
+The whiskered face<br>
+Of that<br>
+Darn car</p>
+
+<p id="verse3">Who seeks a place<br>
+To nap:<br>
+She likes the best<br>
+Is there--<br>
+Right square<br>
+Upon the guest<br>
+Who blows<br>
+His nose<br>
+And starts to sneeze...<br>
+The one<br>
+Undone<br>
+By allergies!
+</p>
