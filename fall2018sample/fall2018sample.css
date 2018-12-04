@@ -112,11 +112,11 @@ header, footer{
     "bottom";
     }
 
-    header{
-        grid-area: top;
-         height: 4rem;
-         grid-column: 1;
-         grid-row: 1;
+header{
+    grid-area: top;
+    height: 4rem;
+    grid-column: 1;
+    grid-row: 1;
  
      }
  
