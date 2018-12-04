@@ -46,14 +46,14 @@ Your Formatting
     min-height: 100vh;
     grid-template-rows: 4rem 100% 3rem;
     grid-template-columns: 1fr 2fr 200px; 
-    //grid-template-areas:
-   // "top"
-   // "left center right"
-  //  "bottom";
+    grid-template-areas:
+    "top"
+    "left center right"
+    "bottom";
     }
 
 header{
-       //grid-area: top;
+       grid-area: top;
         height: 4rem;
         grid-column: 1 / 4;
         grid-row: 1;
@@ -61,26 +61,26 @@ header{
     }
 
 nav{
-    //grid-area: right;
+    grid-area: right;
     grid-column: 3;
     grid-row: 2;
 
 }
 
 article{
-   // grid-area: center;
+    grid-area: center;
     grid-column: 2;
     grid-row: 2;
 }
 
 aside{
-    //grid-area: left;
+    grid-area: left;
     grid-column: 1;
     grid-row: 2;
 }
 
 footer{
-    //grid-area: bottom;
+    grid-area: bottom;
     height: 3rem;
     grid-column: 1 / 4;
     grid-row: 3;
