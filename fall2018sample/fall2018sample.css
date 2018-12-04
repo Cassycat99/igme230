@@ -101,9 +101,49 @@ header, footer{
 @media only screen and (max-width: 600px) {
 
     #wrapper{
-        width: 100vw;
-        grid-column-start: 1;
-        grid-column-end: 2;
+    width: 100vw;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr; 
+    grid-template-areas:
+    "top"
+    "right"
+    "center"
+    "left"
+    "bottom";
     }
+
+    header{
+        grid-area: top;
+         height: 4rem;
+         grid-column: 1;
+         grid-row: 1;
+ 
+     }
+ 
+ nav{
+     grid-area: right;
+     grid-column: 1;
+     grid-row: 2;
+ 
+ }
+ 
+ article{
+     grid-area: center;
+     grid-column: 1;
+     grid-row: 3;
+ }
+ 
+ aside{
+     grid-area: left;
+     grid-column: 1;
+     grid-row: 4;
+ }
+ 
+ footer{
+     grid-area: bottom;
+     height: 3rem;
+     grid-column: 1;
+     grid-row: 5;
+ }
 }
 
