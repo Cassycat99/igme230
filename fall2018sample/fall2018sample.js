@@ -9,11 +9,16 @@
 */
 
 
-let verse = ("content1.txt")  // sets default verse element
-$("#content-menu").val(verse); // changes menu option to default
-$("#choose-content").load(verse);   // retrieves only default element
+let content = ("content1.txt")  // sets default content1 element
+
+$("content").load(content);   // retrieves only default element
 
 $("#content-menu").change(function() {
-verse = $(this).val();
-$("#choose-content").load(verse); 
+    content = $(this).val();
+$("#choose-content").load(content); 
 });
+
+
+
+
+
