@@ -96,6 +96,10 @@ header, footer{
     border: 1px solid top white;
 }
 
+.submenu{
+    padding-left: .25rem;
+    width: 100%;
+}
 
 
 @media only screen and (max-width: 600px) {
