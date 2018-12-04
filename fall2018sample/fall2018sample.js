@@ -11,7 +11,7 @@
 
 let content = ("content1.txt")  // sets default content1 element
 
-$("content").load(content);   // loads content element with content.text1
+$("#content").load(content);   // loads content element with content.text1
 
 $("#content-menu").change(function() {
     content = $(this).val();
