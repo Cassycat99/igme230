@@ -50,7 +50,7 @@ Your Formatting
     grid-row-end: 4;
     grid-template-rows: 4em 100% 3em;
     grid-template-columns: 1fr 2fr 200px; 
-    Grid-template-areas:
+    grid-template-areas:
     "top"
     "left center right"
     "bottom";
