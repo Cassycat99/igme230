@@ -49,11 +49,33 @@ Your Formatting
     grid-row-start: 1;
     grid-row-end: 4;
     grid-template-rows: 4em 100% 3em;
-    grid-template-columns: 1/3fr 2/3fr 200px; 
+    grid-template-columns: 1fr 2fr 200px; 
+    Grid-template-areas:
+    "top"
+    "left center right"
+    "bottom";
+    }
 
-    
+header{
+        grid-area: top;
+    }
+
+nav{
+    grid-area: right;
 }
 
+article{
+    grid-area: center;
+}
+
+aside{
+    grid-area: left;
+}
+
+footer{
+    grid-area: bottom;
+}
+        
 header, footer{
     display: flex;
     justify-content: center;
