@@ -99,6 +99,7 @@ header, footer{
 .submenu{
     padding-left: .25rem;
     width: 100%;
+    text-decoration: none;
 }
 
 
