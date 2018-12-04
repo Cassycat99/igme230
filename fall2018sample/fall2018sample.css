@@ -58,6 +58,7 @@ Your Formatting
 
 header{
         grid-area: top;
+        height: 4rem;
     }
 
 nav{
@@ -74,6 +75,7 @@ aside{
 
 footer{
     grid-area: bottom;
+    height: 3rem;
 }
         
 header, footer{
