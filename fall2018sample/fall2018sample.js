@@ -18,6 +18,7 @@ $("#content-menu").change(function() {
 $("#content").load(content); 
 });
 
+/*
 let verse = ("verse 3-4.txt")  // sets default verse element
 $("#verse-choose").val(verse); // changes menu option to default
 $("#selectedverse").load(verse);   // retrieves only default element
@@ -25,5 +26,5 @@ $("#selectedverse").load(verse);   // retrieves only default element
 $("#verse-choose").change(function() {
 verse = $(this).val();
 $("#selectedverse").load(verse); 
-
+*/
 
