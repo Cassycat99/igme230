@@ -17,7 +17,7 @@ console.log(content);
 console.log("hi");
 
 
-$("#content-choose").change(function() {
+$("#choose-content").change(function() {
     content = $(this).val();
 $("#content").load(content); 
 console.log(content);
@@ -64,7 +64,7 @@ $("#selectedverse").load(verse);
 
 $(".submenu").hide(1500); //hide on load
 
-$("#menuitem").click(function () {
+$("#menubox").click(function () {
     $(".submenu").toggle(); //change to hidden
 });
 
