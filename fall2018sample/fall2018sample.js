@@ -14,13 +14,14 @@ let content = ("content1.txt")  // sets default content1 element
 $("#content").load(content); // loads content element with content.text1
 //$("#content-choose").val("Your Name");  //changes menu option
 console.log(content);
-console.log(#content-choose);
+console.log("hi");
 
 
 $("#content-choose").change(function() {
     content = $(this).val();
 $("#content").load(content); 
 console.log(content);
+console.log("change occured");
 });
 
 /*
@@ -59,18 +60,15 @@ $("#selectedverse").load(verse);
 </div>
 </nav>*/
 
-/*
+
 
 $(".submenu").hide(1500); //hide on load
 
 $("#menuitem").click(function () {
-    $(".submenu").hide(1500); //change to hidden
+    $(".submenu").toggle(); //change to hidden
 });
 
-$("#menuitem").click(function () {
-    $(".submenu").show(10); //change to showing
-});
-*/
+
 
 /*
 <body>
