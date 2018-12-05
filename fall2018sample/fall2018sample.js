@@ -62,7 +62,7 @@ $("#selectedverse").load(verse);
 
 
 
-$(".submenu").hide(1000); //hide on load
+$(".submenu").hide(); //hide on load
 
 $(".menubox").click(function () {
     $(".submenu").toggle(1000); //change to hidden
