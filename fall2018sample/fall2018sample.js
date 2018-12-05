@@ -66,6 +66,7 @@ $(".submenu").hide(); //hide on load
 
 $(".menubox").click(function () {
     $(".submenu").toggle(1000); //change to hidden
+    $(".submenu").next.toggle(1000);
 });
 
 
