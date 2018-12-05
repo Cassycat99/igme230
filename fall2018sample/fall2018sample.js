@@ -62,10 +62,10 @@ $("#selectedverse").load(verse);
 
 
 
-$(".submenu").hide(1500); //hide on load
+$(".submenu").hide(1000); //hide on load
 
 $(".menubox").click(function () {
-    $(".submenu").toggle(); //change to hidden
+    $(".submenu").toggle(1000); //change to hidden
 });
 
 
