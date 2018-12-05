@@ -12,7 +12,7 @@
 let content = ("content1.txt")  // sets default content1 element
 
 $("#content").load(content); // loads content element with content.text1
-//$("#content-choose").val("Your Name");  //changes menu option
+//$("#choose-content").val("Your Name");  //changes menu option
 console.log(content);
 console.log("hi");
 
