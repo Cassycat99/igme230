@@ -12,11 +12,12 @@
 let content = ("content1.txt")  // sets default content1 element
 
 $("#content").load(content); // loads content element with content.text1
-$("#content-choose").val(content);  
+//$("#content-choose").val("Your Name");  //changes menu option
 
 $("#content-choose").change(function() {
     content = $(this).val();
 $("#content").load(content); 
+console.log(content)
 });
 
 /*
@@ -29,3 +30,67 @@ verse = $(this).val();
 $("#selectedverse").load(verse); 
 */
 
+
+
+
+
+
+
+/*
+<nav>
+
+<div class="menubox">
+    <p class="menuitem">Menu Item 1</p>
+    <ul class="submenu">
+        <li>Sub Item 1a</li>
+        <li>Sub Item 1b</li>
+    </ul>
+</div>
+
+<div class="menubox">
+    <p class="menuitem">Menu Item 2</p>
+    <ul class="submenu">
+        <li>Sub Item 2a</li>
+        <li>Sub Item 2b</li>
+    </ul>
+</div>
+</nav>*/
+
+/*
+
+$(".submenu").hide(1500); //hide on load
+
+$("#menuitem").click(function () {
+    $(".submenu").hide(1500); //change to hidden
+});
+
+$("#menuitem").click(function () {
+    $(".submenu").show(10); //change to showing
+});
+*/
+
+/*
+<body>
+    <button id="show">Show</button>
+    <button id="hide">Hide</button>
+
+    <div id="navpanel">
+        <ul> 
+            <li>Link 1</li>
+            <li>Link 2</li>
+            <li>Link 3</li>
+        </ul>
+    </div>
+
+    <script>
+
+    $("#hide").click(function () {
+        $("#navpanel").hide(1500);
+    });
+
+    $("#show").click(function () {
+        $("#navpanel").show(10);
+    });
+    
+    
+    </script>*/
