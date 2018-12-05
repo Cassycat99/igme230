@@ -44,12 +44,12 @@ Your Formatting
     width: 90vw;
     max-width: 1200px;
     min-height: 100vh;
-    grid-template-rows: 4rem 100% 3rem;
+    grid-template-rows: 4rem 1fr 3rem;
     grid-template-columns: 1fr 2fr 200px; 
     grid-template-areas:
-    "top"
+    "top top top"
     "left center right"
-    "bottom";
+    "bottom bottom bottom";
     }
 
 header{
@@ -59,7 +59,9 @@ header{
         grid-row: 1;
 
     }
-
+.submenu{
+    display: none;
+}
 nav{
     grid-area: right;
     grid-column: 3;
@@ -152,4 +154,3 @@ header{
      grid-row: 5;
  }
 }
-

@@ -8,20 +8,21 @@
 </select>
 */
 
+$(".menuitem").click(function () {
+    $(this).next(".submenu").slideToggle();
+});
+
 
 let content = ("content1.txt")  // sets default content1 element
 
 $("#content").load(content); // loads content element with content.text1
 //$("#choose-content").val("Your Name");  //changes menu option
-console.log(content);
-console.log("hi");
 
 
 $("#choose-content").change(function() {
     content = $(this).val();
 $("#content").load(content); 
-console.log(content);
-console.log("change occured");
+
 });
 
 /*
@@ -62,12 +63,9 @@ $("#selectedverse").load(verse);
 
 
 
-$(".submenu").hide(); //hide on load
+//$(".submenu").hide(); //hide on load
 
-$(".menubox").click(function () {
-    $(".submenu").toggle(1000); //change to hidden
-    $(".submenu").next.toggle(1000);
-});
+
 
 
 
