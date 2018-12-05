@@ -13,11 +13,14 @@ let content = ("content1.txt")  // sets default content1 element
 
 $("#content").load(content); // loads content element with content.text1
 //$("#content-choose").val("Your Name");  //changes menu option
+console.log(content);
+console.log(#content-choose);
+
 
 $("#content-choose").change(function() {
     content = $(this).val();
 $("#content").load(content); 
-console.log(content)
+console.log(content);
 });
 
 /*
