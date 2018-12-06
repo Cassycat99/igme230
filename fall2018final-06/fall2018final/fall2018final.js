@@ -14,7 +14,16 @@ $("article").load(content);
 function radioClicked() {
 	content = this.value;
     $("article").load(content);
+   // $("article").load("article1.txt");
 }
+
+//document.addEventListener("click", radioClicked);
+
+//$(document).ready(function(){
+//    $("article").load("article1.txt");
+//}
+
+
 
 
 let val =  0;

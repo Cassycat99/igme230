@@ -42,7 +42,7 @@ Your Formatting
     max-width: 1000px;
     margin: auto;
     min-height: 10vh;
-    grid-template-rows: 75px 1fr 100% 50px;
+    grid-template-rows: 75px 30px 100% 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "top top top top"
@@ -78,6 +78,7 @@ nav {
     display: flex;
    justify-content: center;
     justify-content: space-around;
+    align-content: center;
 }
 
 aside {
@@ -99,6 +100,7 @@ footer {
 .mainmenu{
     width: 6rem;
     background-color: #ccc;
+    z-index: 10;
 }
 
 .submenu{
@@ -149,11 +151,13 @@ footer {
     article {
         grid-column: 1;
         grid-row: 3;
+        height: auto;
     }
 
     aside {
         grid-column: 1;
         grid-row: 4;
+        height: auto;
     }
 
     footer {
