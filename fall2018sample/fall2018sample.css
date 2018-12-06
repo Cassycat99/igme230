@@ -48,7 +48,7 @@ Your Formatting
     grid-template-columns: 1fr 2fr 200px; 
     grid-template-areas:
     "top top top"
-    "left center right"
+    "left center right2"
     "bottom bottom bottom";
     }
 
@@ -63,7 +63,7 @@ header{
     display: none;
 }
 nav{
-    grid-area: right;
+    grid-area: right2;
     grid-column: 3;
     grid-row: 2;
 
@@ -103,6 +103,7 @@ header, footer{
     width: 100%;
     list-style-type: none;
     background-color: lightgrey;
+    display: none;
 }
 
 
