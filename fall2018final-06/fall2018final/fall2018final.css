@@ -42,7 +42,7 @@ Your Formatting
     max-width: 1000px;
     margin: auto;
     min-height: 10vh;
-    grid-template-rows: 75px 30px 100% 50px;
+    grid-template-rows: 75px 30px 100 50px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
         "top top top top"
@@ -101,6 +101,7 @@ footer {
     width: 6rem;
     background-color: #ccc;
     z-index: 10;
+    margin: 5px;
 }
 
 .submenu{
