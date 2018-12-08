@@ -483,7 +483,6 @@ body {
 
 main {
     display: flex;
-    background-color: azure;
     margin: 0px;
     justify-content: flex-start;
     flex-direction: column;
@@ -510,7 +509,6 @@ img {
     .grid {
         display: grid;
         grid-template-columns: 50% 50%;
-        background-color: white;
     }
 
     .header {
