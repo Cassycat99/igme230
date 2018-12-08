@@ -1,48 +1,59 @@
-*{
+* {
     box-sizing: border-box;
 }
 
 /*FONTS..............................*/
-h1, h2, h3, h4, h5, ul {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul {
     font-family: 'Hind Madurai', sans-serif;
 }
 
-p{  
+p {
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 1.2em;
 }
 
-h1, #Name{
+h1,
+#Name {
     font-size: 32px;
 }
 
-h2{
+h2 {
     font-size: 1.6em;
     margin-top: 40px;
 }
 
-h3, ul, #Name{
+h3,
+ul,
+#Name {
     font-size: 1.2em;
 }
 
-h3{
+h3 {
     margin-top: 75px;
 }
 
-.NoMargin{
-    margin-top: 0px;
-}
-
-h4{
+h4 {
     font-size: 1em;
 }
 
-h5{
+h5 {
     font-size: 1em;
     line-height: 1.5em;
 }
-/*end of fonts......................................*/
 
+h5 {
+    margin: 0px;
+    min-width: 300px;
+    color: #336d8e;
+}
+
+/*end of fonts......................................*/
 
 #Wrapper {
     max-width: 100%;
@@ -50,7 +61,7 @@ h5{
     margin: auto;
 }
 
-.TextWrapper{
+.TextWrapper {
     max-width: 1080px;
     margin: auto;
     padding: 0px 40px 0px 40px;
@@ -79,30 +90,6 @@ header {
     font-weight: bold;
 }
 
-#ExpandedNav nav .ActiveLink {
-    font-weight: bold;
-}
-
-#ExpandedNav nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 300px;
-    margin: 0px;
-    align-items: flex-end;
-    padding: 0px;
-}
-
-#ExpandedNav nav ul a {
-    color: #336d8e;
-}
-
-nav ul a:hover {
-    font-weight: 600;
-}
-
-
-
 section {
     margin: 48px 0px 48px 0px;
     height: 400px;
@@ -113,347 +100,360 @@ section {
     min-width: 700px;
 }
 
-section ul{
+section ul {
     align-self: center;
     padding: 0px 40px 0px 0px;
     min-width: 140px;
 }
 
-section .type{
+section .type {
     padding-bottom: 40px;
 }
 
-
-#MedicalMockUp{
-    max-width: 100%;
-    width: 400px;
-    height: 300px;
-    align-self: center;
-    margin-right: 146px;
-}
-
-.Profile{
+.Profile {
     float: right;
     padding-left: 20px;
 }
-
 
 footer {
     padding: 40px 40px 0px 40px;
 
 }
 
-h5 {
-    margin: 0px;
-    min-width: 300px;
-    color: #336d8e;
-}
-
-.Type{
+.Type {
     margin-bottom: 20px;
 }
 
-.ProjectTitle{
+.ProjectTitle {
     font-weight: Bold;
     color: #336d8e;
 }
 
-#HamburgerMenu, .dropdown, #checkbox_toggle, .hamburger, .line-1, line-2, .line-3, #HamburgerMenu nav, #HamburgerMenu nav ul, #HamburgerMenu nav ul a{
+#HamburgerMenu,
+.dropdown,
+#checkbox_toggle,
+.hamburger,
+.line-1,
+line-2,
+.line-3,
+#HamburgerMenu nav,
+#HamburgerMenu nav ul,
+#HamburgerMenu nav ul a {
     display: none;
 }
 
-.delay{
+.delay {
     display: none;
 }
 
-#Resume{
+#Resume {
     display: none;
+}
+
+.projectImage {
+    max-width: 100%;
 }
 
 
 /*MEDIA QUERY....................................................*/
+
 @media only screen and (max-width: 840px) {
-    
-    #MedicalMockUp{
-     margin-right: 60px;
-   }
+
+    #MedicalMockUp {
+        margin-right: 60px;
+    }
 }
-   
-   @media only screen and (max-width: 740px) {
-       
-    .Profile{
+
+@media only screen and (max-width: 740px) {
+
+    .Profile {
         float: none;
         clear: both;
     }
 
-    .ProfileHolder{
+    .ProfileHolder {
         display: flex;
         justify-content: center;
         align-content: center;
     }
 
-   section {
-    flex-direction: column;
-     height: 600px;
-     justify-content: flex-start;
-     align-content: space-around;
-     width: 100%;
-     min-width: 300px;
-   }
-   
-    #MedicalMockUp{
-     order: 2;
-     margin: 0px;
-   }
+    section {
+        flex-direction: column;
+        height: 600px;
+        justify-content: flex-start;
+        align-content: space-around;
+        width: 100%;
+        min-width: 300px;
+    }
 
-   section ul{
-     padding-top: 20px;
-     margin: 0px;
-   }
+    #MedicalMockUp {
+        order: 2;
+        margin: 0px;
+    }
+
+    section ul {
+        padding-top: 20px;
+        margin: 0px;
+    }
 }
 
 
 @media only screen and (max-width: 650px) {
-    
-#ExpandedNav{
-    display: none;
-}
-#HamburgerMenu, .dropdown, .hamburger, .line-1, line-2, .line-3, #HamburgerMenu nav, #HamburgerMenu nav ul, #HamburgerMenu nav ul a{
-    display: block;
-}
 
-.delay{
+    #ExpandedNav {
+        display: none;
+    }
+    #HamburgerMenu,
+    .dropdown,
+    .hamburger,
+    .line-1,
+    line-2,
+    .line-3,
+    #HamburgerMenu nav,
+    #HamburgerMenu nav ul,
+    #HamburgerMenu nav ul a {
         display: block;
-}
-
-#HamburgerMenu nav ul{
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    padding-top: 50px;
-    margin-left: -150px;
-}
-
-
-/*HAMBURGER MENU*/
-a{
-    cursor: pointer;
-  }
-  input[type=checkbox] {
-    display: none;
-  }
-  
-   nav ul {
-    color: #336d8e;
-    max-height: 0px;
-    overflow: hidden;
-    list-style: none;
-    transition: all 1s cubic-bezier(.325, 1, .22, 1);
-  }
-  
-  #HamburgerMenu nav li {
-    font-size: 1em;
-    padding: 5px 0;
-    display: flex;
-    justify-content: center;
-  }  
-  
-  input[type=checkbox]:checked ~ nav ul {
-    height:  calc(100vh - 60px);
-    max-height: 100vh;
-    margin: auto;
-    transition: all 1s cubic-bezier(.5, 1, .22, 1);
-  }
-  
-  .hamburger {
-    display: block;
-    position: absolute;
-    top: 40px;
-    right: 40px;
-    height: 27px;
-    width: 27px;
-    cursor: pointer;
-    transition: all 1s cubic-bezier(.19, 1, .22, 1);
-  }
-  
-  #HamburgerMenu .line {
-    position: absolute;
-    display: block;
-    background: #336d8e;
-    width: 28px;
-    height: 3px;
-    height: .15rem;
-    border-radius: .2rem;
-    left: 0;
-    transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
-  }
-
-  #HamburgerMenu .line-1 {
-    top: 2px;
-    height: 3px;
-  
-  }
-  
-  #HamburgerMenu .line-2 {
-    top: 10px;
-    width: 28px;
-    height: 3px;
-  }
-  
-  #HamburgerMenu .line-3 {
-    top: 18px;
-    height: 3px;
-  }
-  
-  input[type=checkbox]:checked ~ label .line-1 {
-    top: 0px;
-    width: 28px;
-    transform: translateX(-12px) rotate(-45deg) translateY(13px);
-  }
-  
-  input[type=checkbox]:checked ~ label .line-2 {
-    opacity: 0;
-  }
-  
-  input[type=checkbox]:checked ~ label .line-3 {
-    top: 14px;
-    width: 22px;
-    transform: translateX(-9px) rotate(45deg) translateY(-9px);
-  }
-  /*END OF HAMBURGER MENU*/
-}
-
-@media only screen and (max-width: 450px) {
-  
-    #MedicalMockUp{
-     width: 300px;
-     height: auto;
     }
 
-    section{
+    .delay {
+        display: block;
+    }
+
+    #HamburgerMenu nav ul {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        padding-top: 50px;
+        margin-left: -150px;
+    }
+}
+
+    /*HAMBURGER MENU...............................................*/
+    a {
+        cursor: pointer;
+    }
+    input[type=checkbox] {
+        display: none;
+    }
+
+    nav ul {
+        color: #336d8e;
+        max-height: 0px;
+        overflow: hidden;
+        list-style: none;
+        transition: all 1s cubic-bezier(.325, 1, .22, 1);
+    }
+
+    #HamburgerMenu nav li {
+        font-size: 1em;
+        padding: 5px 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    input[type=checkbox]:checked ~ nav ul {
+        height: calc(100vh - 60px);
+        max-height: 100vh;
+        margin: auto;
+        transition: all 1s cubic-bezier(.5, 1, .22, 1);
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        height: 27px;
+        width: 27px;
+        cursor: pointer;
+        transition: all 1s cubic-bezier(.19, 1, .22, 1);
+    }
+
+    #HamburgerMenu .line {
+        position: absolute;
+        display: block;
+        background: #336d8e;
+        width: 28px;
+        height: 3px;
+        height: .15rem;
+        border-radius: .2rem;
+        left: 0;
+        transition: all .6s cubic-bezier(.5, .1, 0, 1.2);
+    }
+
+    #HamburgerMenu .line-1 {
+        top: 2px;
+        height: 3px;
+
+    }
+
+    #HamburgerMenu .line-2 {
+        top: 10px;
+        width: 28px;
+        height: 3px;
+    }
+
+    #HamburgerMenu .line-3 {
+        top: 18px;
+        height: 3px;
+    }
+
+    input[type=checkbox]:checked ~ label .line-1 {
+        top: 0px;
+        width: 28px;
+        transform: translateX(-12px) rotate(-45deg) translateY(13px);
+    }
+
+    input[type=checkbox]:checked ~ label .line-2 {
+        opacity: 0;
+    }
+
+    input[type=checkbox]:checked ~ label .line-3 {
+        top: 14px;
+        width: 22px;
+        transform: translateX(-9px) rotate(45deg) translateY(-9px);
+    }
+    /*END OF HAMBURGER MENU*/
+
+
+@media only screen and (max-width: 450px) {
+
+    #MedicalMockUp {
+        width: 300px;
+        height: auto;
+    }
+
+    section {
         height: 450px;
-      }
-    
+    }
+
 }
 
 
 /*NAVIGATION...................*/
-    
+
 .circles {
     border-radius: 50px;
     border: #336d8e;
     border-width: 3px;
     border-style: solid;
-    }
-    
-    
-    body {
-  font-family: sans-serif;
-  margin: 0;
 }
 
-.box{
-  height: 500px;
-  background-color: green;
+
+body {
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.box {
+    height: 500px;
+    background-color: green;
 }
 
 .section {
-  height: 5vh;
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
 }
 
 .menu-btn {
-  display: block;
-  width: 50px;
-  height: 50px;
-  background-color: #fff;
-  border: #336d8e;
-  border-width: 3px;
-  border-style: solid;
-  border-radius: 50%;
-  position: relative;
-  z-index: 4;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border: #336d8e;
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 50%;
+    position: relative;
+    z-index: 4;
 }
 
 .menu-btn span,
 .menu-btn span::before,
 .menu-btn span::after {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -10px;
-  margin-top: -1px;
-  width: 20px;
-  height: 2px;
-  background-color: #222;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -1px;
+    width: 20px;
+    height: 2px;
+    background-color: #222;
 }
 
 .menu-btn span::before,
 .menu-btn span::after {
-  content: '';
-  display: block;
-  transition: 0.2s;
+    content: '';
+    display: block;
+    transition: 0.2s;
 }
 
 .menu-btn span::before {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 .menu-btn span::after {
-  transform: translateY(5px);
+    transform: translateY(5px);
 }
 
 .menu-btn_active span {
-  height: 0;
+    height: 0;
 }
 
 .menu-btn_active span:before {
-  transform: rotate(45deg);
+    transform: rotate(45deg);
 }
 
 .menu-btn_active span:after {
-  transform: rotate(-45deg);
+    transform: rotate(-45deg);
 }
+
 .menu-block {
-  position: fixed;
-  padding: 10px;
+    position: fixed;
+    padding: 10px;
 }
 
 .menu a {
-  color: #222;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #fff;
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  transition: .3s;
-  position: absolute;
-  left: calc(50% - 20px); 
-  top: calc(50% - 20px);
-  z-index: 0;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: .3s;
+    position: absolute;
+    left: calc(50% - 20px);
+    top: calc(50% - 20px);
+    z-index: 0;
 }
+
 .menu a:nth-child(1) {
-  transition-delay: 0.1s;
+    transition-delay: 0.1s;
 }
+
 .menu a:nth-child(2) {
-  transition-delay: 0.2s;
+    transition-delay: 0.2s;
 }
+
 .menu a:nth-child(3) {
-  transition-delay: 0.3s;
+    transition-delay: 0.3s;
 }
+
 .menu_active a:nth-child(1) {
-  transform: translate(-200%, 0%);
+    transform: translate(-200%, 0%);
 }
+
 .menu_active a:nth-child(2) {
-  transform: translate(-125%, 125%);
+    transform: translate(-125%, 125%);
 }
+
 .menu_active a:nth-child(3) {
-  transform: translate(-0%, 200%);
+    transform: translate(-0%, 200%);
 }
 
 
@@ -466,8 +466,7 @@ body {
 
 #projects {
     display: flex;
-    justify-content: space-around;
-    //background-color: aliceblue;
+    justify-content: space-around; //background-color: aliceblue;
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -500,7 +499,11 @@ body {
 
 #click3:hover {
     background: url("images/reporter5hover.jpg") no-repeat;
-    
+}
+
+#click3 {
+    display: flex;
+    align-content: center;
 }
 
 main {
@@ -517,12 +520,12 @@ main {
 }
 
 
-.imgHolder{
+.imgHolder {
     display: flex;
     align-self: center;
 }
 
-img{
+img {
     align-self: center;
     margin: auto;
 }

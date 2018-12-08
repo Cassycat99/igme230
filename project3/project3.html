@@ -47,7 +47,7 @@
             <p>PROJECT 2</p>
         </div>
         <div id="click3">
-            
+            <h2 class="hoverTitle"> GRAPHIC DESIGN</h2>
         </div>
     </div>
 
@@ -87,82 +87,94 @@
 </html>
 
 <style>
-    
-    .projectImage{
-          max-width: 100%;
-    }
-    
-    #click3{
+    #click3 {
         display: flex;
-        align-content: center;
+        justify-content: center;
+        align-items: center;
     }
+
+    #click3:hover .hoverTitle {
+        opacity: 1;
+    }
+
+    .hoverTitle {
+        opacity: 0;
+        color: white;
+        margin-top: 0px;
+    }
+
     
     
-    
-    
-    
-    
-    .grid{
+
+    .grid {
         display: grid;
         grid-template-columns: 50% 50%;
     }
-    
-    
-      
-    .header{
+
+
+
+    .header {
         grid-row: 1 / 2;
     }
-    
-    #project{
+
+    #project {
         grid-row: 2 / 3;
     }
-    
-    #reporter{
+
+    #reporter {
         grid-row: 3 / 4;
     }
-    
-    #role{
+
+    #role {
         grid-row: 2 / 3;
     }
-    
-    #roledescription{
+
+    #roledescription {
         grid-row: 3 / 4;
     }
-    
-    .r1, .r2{
+
+    .r1,
+    .r2 {
         grid-row: 4 / 5;
     }
-    
-    .r3, .r4{
+
+    .r3,
+    .r4 {
         grid-row: 5 / 6;
     }
 
-    .left{
+    .left {
         margin-left: 40px;
         max-width: 50%;
     }
-    
-    .right{
+
+    .right {
         max-width: 50%;
         margin-left: 40px;
     }
-    
-    .r1, .r3, .left{
+
+    .r1,
+    .r3,
+    .left {
         grid-column: 1 / 2;
         width: 100%;
     }
-    
-    .r2, .r4, .right{
+
+    .r2,
+    .r4,
+    .right {
         grid-column: 2 / 3;
         width: 100%;
     }
-    
-    .r1, .r2. .r3, .r4{
+
+    .r1,
+    .r2. .r3,
+    .r4 {
         max-width: calc(100% - 40px);
     }
-    
-    
-    .imgHolder img{
+
+
+    .imgHolder img {
         padding: 20px;
         margin-left: 20px;
         max-width: calc(100%);
@@ -172,15 +184,15 @@
 
 <script>
     $('.menu-btn').on('click', function(e) {
-  e.preventDefault();
-  $(this).toggleClass('menu-btn_active');
-  $('.menu').toggleClass('menu_active');
-});
+        e.preventDefault();
+        $(this).toggleClass('menu-btn_active');
+        $('.menu').toggleClass('menu_active');
+    });
 
 </script>
 
 <script>
-        $(document).ready(function() {
+    $(document).ready(function() {
         $("#click1").click(function() {
             $(".myClass1").toggleClass("hide");
 
