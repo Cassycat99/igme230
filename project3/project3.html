@@ -44,9 +44,12 @@
             <p>PROJECT 1</p>
         </div>
         <div id="click2">
-            <p>PROJECT 2</p>
+            <img src="images/mockup.jpg" onmouseover="this.src='images/reporter5hover.jpg'" onmouseout="this.src='images/reporter5.jpg'" alt="User Experience Design" title="User Experience Design">
+            <h2 class="hoverTitle"> USER EXPERIENCE DESIGN</h2>
+            
         </div>
         <div id="click3">
+            <img src="images/reporter5.jpg" onmouseover="this.src='images/reporter5hover.jpg'" onmouseout="this.src='images/reporter5.jpg'" alt="Graphic Design" title="Graphic Design">
             <h2 class="hoverTitle"> GRAPHIC DESIGN</h2>
         </div>
     </div>
@@ -87,14 +90,12 @@
 </html>
 
 <style>
-    #click3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+
 
     #click3:hover .hoverTitle {
         opacity: 1;
+        z-index: 10;
+        position: relative;
     }
 
     .hoverTitle {
@@ -103,81 +104,28 @@
         margin-top: 0px;
     }
 
+    #projects{
+        flex-wrap: wrap;
+        min-width: 250px;
+    }
     
-    
-
-    .grid {
-        display: grid;
-        grid-template-columns: 50% 50%;
+    #click2, #click1{
+        min-width: 250px;
+        max-width: 400px;
     }
 
-
-
-    .header {
-        grid-row: 1 / 2;
-    }
-
-    #project {
-        grid-row: 2 / 3;
-    }
-
-    #reporter {
-        grid-row: 3 / 4;
-    }
-
-    #role {
-        grid-row: 2 / 3;
-    }
-
-    #roledescription {
-        grid-row: 3 / 4;
-    }
-
-    .r1,
-    .r2 {
-        grid-row: 4 / 5;
-    }
-
-    .r3,
-    .r4 {
-        grid-row: 5 / 6;
-    }
-
-    .left {
-        margin-left: 40px;
-        max-width: 50%;
-    }
-
-    .right {
-        max-width: 50%;
-        margin-left: 40px;
-    }
-
-    .r1,
-    .r3,
-    .left {
-        grid-column: 1 / 2;
+    #click3 img{
         width: 100%;
-    }
-
-    .r2,
-    .r4,
-    .right {
-        grid-column: 2 / 3;
-        width: 100%;
-    }
-
-    .r1,
-    .r2. .r3,
-    .r4 {
-        max-width: calc(100% - 40px);
+        height: 100%;
+        min-width: 250px;
+        max-width: 400px;
     }
 
 
     .imgHolder img {
         padding: 20px;
         margin-left: 20px;
-        max-width: calc(100%);
+        max-width: 100%;
     }
 
 </style>

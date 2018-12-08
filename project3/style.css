@@ -318,11 +318,6 @@ line-2,
 
 @media only screen and (max-width: 450px) {
 
-    #MedicalMockUp {
-        width: 300px;
-        height: auto;
-    }
-
     section {
         height: 450px;
     }
@@ -337,6 +332,8 @@ line-2,
     border: #336d8e;
     border-width: 3px;
     border-style: solid;
+    position: absolute;
+    left: -1px;
 }
 
 
@@ -380,7 +377,7 @@ body {
     margin-left: -10px;
     margin-top: -1px;
     width: 20px;
-    height: 2px;
+    height: 1.5px;
     background-color: #222;
 }
 
@@ -476,34 +473,9 @@ body {
     display: none;
 }
 
-#click1 {
-    background: purple;
-    width: 300px;
-    height: 200px;
-    margin: 25px;
-}
-
-#click2 {
+#click1, #click2, #click3 {
     background: blue;
-    width: 300px;
-    height: 200px;
     margin: 25px;
-}
-
-#click3 {
-    width: 300px;
-    height: 200px;
-    margin: 25px;
-    background: url("images/reporter5.jpg") no-repeat;
-}
-
-#click3:hover {
-    background: url("images/reporter5hover.jpg") no-repeat;
-}
-
-#click3 {
-    display: flex;
-    align-content: center;
 }
 
 main {
@@ -529,3 +501,72 @@ img {
     align-self: center;
     margin: auto;
 }
+
+/* GRAPHIC DESIGN CSS....................*/
+
+    .grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        background-color: white;
+    }
+
+    .header {
+        grid-row: 1 / 2;
+    }
+
+#project, #reporter, #role, #roledescription{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+    #project {
+        grid-row: 2 / 3;
+    }
+
+    #reporter {
+        grid-row: 3 / 4;
+    }
+
+    #role {
+        grid-row: 2 / 3;
+    }
+
+    #roledescription {
+        grid-row: 3 / 4;
+    }
+
+    .r1,
+    .r2 {
+        grid-row: 4 / 5;
+    }
+
+    .r3,
+    .r4 {
+        grid-row: 5 / 6;
+    }
+
+    .left, .right {
+        margin-left: 40px;
+    }
+
+    .r1,
+    .r3,
+    .left {
+        grid-column: 1 / 2;
+        width: 100%;
+    }
+
+    .r2,
+    .r4,
+    .right {
+        grid-column: 2 / 3;
+        width: 100%;
+    }
+
+    .r1,
+    .r2. .r3,
+    .r4 {
+        max-width: calc(100% - 40px);
+    }
+
+/*..............................*/
