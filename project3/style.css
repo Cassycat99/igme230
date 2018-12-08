@@ -473,8 +473,11 @@ body {
     display: none;
 }
 
+#click1{
+        background: blue;
+}
+
 #click1, #click2, #click3 {
-    background: blue;
     margin: 25px;
 }
 
