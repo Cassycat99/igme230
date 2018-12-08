@@ -467,8 +467,8 @@ body {
 #projects {
     display: flex;
     justify-content: space-around;
-    background-color: aliceblue;
-    width: 100vw;
+    //background-color: aliceblue;
+    width: 100%;
     margin: 0px;
     padding: 0px;
 }
@@ -479,29 +479,34 @@ body {
 
 #click1 {
     background: purple;
-    width: 200px;
+    width: 300px;
     height: 200px;
     margin: 25px;
 }
 
 #click2 {
     background: blue;
-    width: 200px;
+    width: 300px;
     height: 200px;
     margin: 25px;
 }
 
 #click3 {
-    background: red;
-    width: 200px;
+    width: 300px;
     height: 200px;
     margin: 25px;
+    background: url("images/reporter5.jpg") no-repeat;
+}
+
+#click3:hover {
+    background: url("images/reporter5hover.jpg") no-repeat;
+    
 }
 
 main {
     display: flex;
     background-color: azure;
-    margin: 0px 40px;
+    margin: 0px;
     justify-content: flex-start;
     flex-direction: column;
 }
@@ -518,7 +523,6 @@ main {
 }
 
 img{
-    max-width: 200px;
     align-self: center;
     margin: auto;
 }
