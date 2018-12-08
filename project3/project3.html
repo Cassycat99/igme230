@@ -9,68 +9,151 @@
     <meta name="description" content="Responsive Example">
     <meta name="author" content="Cassy Smithies">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  
+
 </head>
 
 <div id="Wrapper">
-<header>
-    <a id="Name" href="project3.html">CASSY SMITHIES</a>
-    
-    <div class="section">
-      <div class="menu-block">
-        <a href="#" class="menu-btn">
+    <header>
+        <a id="Name" href="project3.html">CASSY SMITHIES</a>
+
+        <div class="section">
+            <div class="menu-block">
+                <a href="#" class="menu-btn">
         <span></span>
       </a>
-        
-        <nav class="menu">
-          <a href="#">
+
+                <nav class="menu">
+                    <a href="#">
               <img class="circles" src="images/cassy.jpg" width="40px" height="40px">
               </a>
-          <a href="#">
+                    <a href="#">
               <img class="circles" src="images/cassy.jpg" width="40px" height="40px">
               </a>
-            <a href="#">
+                    <a href="#">
               <img class="circles" src="images/cassy.jpg" width="40px" height="40px">
               </a>
-        </nav>
-      </div>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+
+
+    <div id="projects">
+        <div id="click1">
+            <p>PROJECT 1</p>
+        </div>
+        <div id="click2">
+            <p>PROJECT 2</p>
+        </div>
+        <div id="click3">
+            <p>PROJECT 3
+                <p>
+        </div>
     </div>
 
-</header>
+    <main>
+        <div id="1" class="myClass1 hide">
+            <div class="grid">
+                <h1 class="left header">Graphic Design</h1>
+                <h2 class="left" id="project">Project</h2>
+                <p class="left" id="reporter">Reporter Print Magazine<br> reporter.rit.edu
+                </p>
+                <h2 class="right" id="role">Role</h2>
+                <p class="right" id="roledescription">Illustrator and Designer</p>
 
+                <div class="imgHolder r1"><img src="images/reporter1.jpg"></div>
+                <div class="imgHolder r2"><img src="images/reporter2.jpg"></div>
+                <div class="imgHolder r3"><img src="images/reporter3.jpg"></div>
+                <div class="imgHolder r4"><img src="images/reporter4.jpg"></div>
 
-<div id="projects">
-    <div id="click1">
-        <p>PROJECT 1</p>
-    </div>
-    <div id="click2">
-        <p>PROJECT 2</p>
-    </div>
-    <div id="click3">
-        <p>PROJECT 3<p>
-    </div>
-</div>
+            </div>
+        </div>
+        <div id="2" class="myClass2 hide">
+            <p>2.This is the blue button.</p>
+        </div>
+        <div id="3" class="myClass3 hide">
+            <p>3.This is the red button. </p>
+        </div>
+    </main>
 
-<main>
-    <div id="1" class="myClass1 hide">
-        <p>1.This is the purple button.</p>
-        <div class="imgHolder"><img src="Cassy/Cassy/IMG_20180720_073345.jpg"></div>
-    </div>
-    <div id="2" class="myClass2 hide">
-        <p>2.This is the blue button.</p>
-    </div>
-    <div id="3" class="myClass3 hide"> <p>3.This is the red button. </p>
-    </div>
-</main>
-
-<footer>
-    <h5>cls8313@rit.edu</h5>
-    <h5>413-896-3205</h5>
-</footer>
+    <footer>
+        <h5>cls8313@rit.edu</h5>
+        <h5>413-896-3205</h5>
+    </footer>
 
 </div>
 
 </html>
+
+<style>
+    .grid{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    
+    
+      
+    .header{
+        grid-row: 1 / 2;
+    }
+    
+    #project{
+        grid-row: 2 / 3;
+    }
+    
+    #reporter{
+        grid-row: 3 / 4;
+    }
+    
+    #role{
+        grid-row: 2 / 3;
+    }
+    
+    #roledescription{
+        grid-row: 3 / 4;
+    }
+    
+    .r1, .r2{
+        grid-row: 4 / 5;
+    }
+    
+    .r3, .r4{
+        grid-row: 5 / 6;
+    }
+
+    .left{
+        margin-left: 40px;
+        max-width: 50%;
+    }
+    
+    .right{
+        max-width: 50%;
+        margin-left: 40px;
+    }
+    
+    .r1, .r3, .left{
+        grid-column: 1 / 2;
+        width: 100%;
+    }
+    
+    .r2, .r4, .right{
+        grid-column: 2 / 3;
+        width: 100%;
+    }
+    
+    .r1, .r2. .r3, .r4{
+        max-width: calc(100% - 40px);
+    }
+    
+    
+    .imgHolder img{
+        padding: 20px;
+        margin-left: 20px;
+        max-width: calc(100%);
+    }
+
+</style>
 
 <script>
     $('.menu-btn').on('click', function(e) {
