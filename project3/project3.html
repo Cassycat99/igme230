@@ -194,3 +194,11 @@
 </html>
 
 
+<script>
+    $('.menu-btn').on('click', function(e) {
+        console.log("fired2");
+        e.preventDefault();
+        $(this).toggleClass('menu-btn_active');
+        $('.menu').toggleClass('menu_active');
+    });
+    </script>
