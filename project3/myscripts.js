@@ -7,6 +7,7 @@
     
 
     $('.menu-btn').on('click', function(e) {
+        console.log("fired");
         e.preventDefault();
         $(this).toggleClass('menu-btn_active');
         $('.menu').toggleClass('menu_active');
