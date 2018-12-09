@@ -1,8 +1,15 @@
     /*This function is used to create the navigation interaction on every page*/
+    ///$('.menu-btn').on('click', function(e) {
+       // e.preventDefault(); /*prevents error*/
+       // $(this).toggleClass('menu-btn_active'); /*changes class*/
+       // $('.menu').toggleClass('menu_active'); /*changes class*/
+    //});
+    
+
     $('.menu-btn').on('click', function(e) {
-        e.preventDefault(); /*prevents error*/
-        $(this).toggleClass('menu-btn_active'); /*changes class*/
-        $('.menu').toggleClass('menu_active'); /*changes class*/
+        e.preventDefault();
+        $(this).toggleClass('menu-btn_active');
+        $('.menu').toggleClass('menu_active');
     });
 
 
