@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,14 @@
     <meta name="author" content="Cassy Smithies">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    $('.menu-btn').on('click', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('menu-btn_active');
+        $('.menu').toggleClass('menu_active');
+    });
 
+</script>
 </head>
 
 <div id="Wrapper">
@@ -26,13 +33,13 @@
 
                 <nav class="menu">
                     <a href="project3.html">
-              <img class="circles" src="images/work.PNG" width="40px" height="40px">
+              <img class="circles" src="images/work.PNG" width="40" height="40" alt="work">
               </a>
                     <a href="about.html">
-              <img class="circles" src="images/about.PNG" width="40px" height="40px">
+              <img class="circles" src="images/about.PNG" width="40" height="40" alt="about">
               </a>
                     <a href="resume.html">
-              <img class="circles" src="images/resume.PNG" width="40px" height="40px">
+              <img class="circles" src="images/resume.PNG" width="40" height="40" alt="resume">
               </a>
                 </nav>
             </div>
@@ -112,12 +119,5 @@
 
 </html>
 
-<script>
-    $('.menu-btn').on('click', function(e) {
-        e.preventDefault();
-        $(this).toggleClass('menu-btn_active');
-        $('.menu').toggleClass('menu_active');
-    });
 
-</script>
 

@@ -469,7 +469,7 @@ body {
 
 #projects {
     display: flex;
-    justify-content: space-around; //background-color: aliceblue;
+    justify-content: space-around;
     width: 100%;
     margin: 0px;
     padding: 0px;
@@ -493,7 +493,7 @@ main {
 }
 
 
-#2 {
+.myClass2 {
     justify-self: flex-start;
 }
 
@@ -627,7 +627,7 @@ main{
 }
 
 .r1,
-.r2. .r3,
+.r2, .r3,
 .r4 {
     max-width: calc(100% - 40px);
 }
