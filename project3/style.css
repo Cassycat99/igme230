@@ -329,6 +329,10 @@ input[type=checkbox]:checked ~ label .line-3 {
 
 /*NAVIGATION...................*/
 
+main{
+    padding: 40px;
+}
+
 .circles {
     border-radius: 50px;
     border: #336d8e;
@@ -519,11 +523,12 @@ img {
         max-height: 280px;
         min-width: 250px;
         max-width: 400px;
+        border-radius: 5px;
     }
 
 
-    #click1 img, #click2 img, #click3 img{
-        border-radius: 5px;
+    #click1 img:hover + .hoverTitle, #click2 img:hover + .hoverTitle, #click3 img:hover + .hoverTitle{
+        font-weight: 600;
     }
 
     .imgHolder img {
@@ -532,12 +537,34 @@ img {
         max-width: 100%;
     }
 
+#click3 img{
+    margin-top: 25px;
+    
+}
+
+.hoverTitle{
+    font-weight: 400;
+}
+
+.hoverTitleBold{
+    font-weight: 600;
+}
+
+.hoverTitle:hover{
+    font-weight: 600;
+}
+
+main{
+    margin: auto;
+    max-width: 1080px
+}
 
 /* GRAPHIC DESIGN CSS....................*/
 
 .grid {
     display: grid;
     grid-template-columns: 50% 50%;
+    margin: 0px -40px;
 }
 
 .header {
@@ -630,6 +657,7 @@ img {
     flex-wrap: wrap;
     align-items: flex-start;
     flex-direction: row;
+    justify-content: center;
 }
 
 
@@ -682,4 +710,14 @@ img {
     .r1 img, .r2 img, .r3 img, .r4 img{
         min-width: 250px;
     }
+    
+    #Wrapper{
+    padding: 0px;
+}
+    
+    #Name{
+        margin-left: 20px;
+        margin-top: 20px
+    }
+    
 }

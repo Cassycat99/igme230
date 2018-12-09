@@ -24,13 +24,13 @@
 
                 <nav class="menu">
                     <a href="project3.html">
-              <img class="circles" src="images/cassy.jpg" width="40px" height="40px">
+              <img class="circles" src="images/work.PNG" width="40px" height="40px">
               </a>
                     <a href="about.html">
-              <img class="circles" src="images/cassy.jpg" width="40px" height="40px">
+              <img class="circles" src="images/about.PNG" width="40px" height="40px">
               </a>
                     <a href="resume.html">
-              <img class="circles" src="images/cassy.jpg" width="40px" height="40px">
+              <img class="circles" src="images/resume.PNG" width="40px" height="40px">
               </a>
                 </nav>
             </div>
@@ -201,13 +201,16 @@
     $(document).ready(function() {
         $("#click1").click(function() {
             $(".myClass1").toggleClass("hide");
+            $("#click1 .hoverTitle").toggleClass("hoverTitleBold");
 
             if ($('#2').hasClass('hide')) {} else {
                 $("#2").toggleClass("hide");
+                $("#click2 .hoverTitle").toggleClass("hoverTitleBold");
             }
 
             if ($('#3').hasClass('hide')) {} else {
                 $("#3").toggleClass("hide");
+                $("#click3 .hoverTitle").toggleClass("hoverTitleBold");
             }
 
         });
@@ -216,13 +219,16 @@
     $(document).ready(function() {
         $("#click2").click(function() {
             $(".myClass2").toggleClass("hide");
+            $("#click2 .hoverTitle").toggleClass("hoverTitleBold");
 
             if ($('#1').hasClass('hide')) {} else {
                 $("#1").toggleClass("hide");
+                $("#click1 .hoverTitle").toggleClass("hoverTitleBold");
             }
 
             if ($('#3').hasClass('hide')) {} else {
                 $("#3").toggleClass("hide");
+                $("#click3 .hoverTitle").toggleClass("hoverTitleBold");
             }
 
         });
@@ -231,13 +237,16 @@
     $(document).ready(function() {
         $("#click3").click(function() {
             $(".myClass3").toggleClass("hide");
+            $("#click3 .hoverTitle").toggleClass("hoverTitleBold");
 
             if ($('#2').hasClass('hide')) {} else {
                 $("#2").toggleClass("hide");
+                $("#click2 .hoverTitle").toggleClass("hoverTitleBold");
             }
 
             if ($('#1').hasClass('hide')) {} else {
                 $("#1").toggleClass("hide");
+                $("#click1 .hoverTitle").toggleClass("hoverTitleBold");
             }
 
 
