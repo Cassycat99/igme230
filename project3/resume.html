@@ -10,46 +10,41 @@
     <meta name="description" content="Cassy Smithies' Resume">
     <meta name="author" content="Cassy Smithies">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
 </head>
 
 <div id="Wrapper">
     <header>
-        <a id="Name" href="project2.html">CASSY SMITHIES</a>
+        <a id="Name" href="project3.html">CASSY SMITHIES</a>
 
-        <div id="ExpandedNav">
-                <nav>
-                        <ul>
-                            <li><a href="project2.html">WORK</a></li>
-                            <li><a href="about.html">ABOUT</a></li>
-                            <li><a  class="ActiveLink" href="resume.html">RESUME</a></li>
-                        </ul>
-                    </nav>
-                    </div>
-            
-                    <div id="HamburgerMenu" class="dropdown">
-                            <input type="checkbox" id="checkbox_toggle">
-                            <label for="checkbox_toggle" class="hamburger">
-                                <div class="line line-1"></div>
-                                <div class="line line-2"></div>
-                                <div class="line line-3"></div>
-                             </label>
-                            <nav>
-                                <ul>
-                                    <li><a href="project2.html">WORK</a></li>
-                                    <li><a href="about.html">ABOUT</a></li>
-                                    <li><a  class="ActiveLink" href="resume.html">RESUME</a></li>
-                                </ul>
-                            </nav>
-                        </div>
-                        
-                            <div class="delay">
-                                    <div class="box"></div>
-                                    <div class="box"></div>
-                                    <div class="box"></div>
-                            </div>
+        <div class="section">
+            <div class="menu-block">
+                <a href="#" class="menu-btn">
+        <span></span>
+      </a>
+
+                <nav class="menu">
+                    <a href="project3.html">
+              <img class="circles" src="images/cassy.jpg" width="40px" height="40px">
+              </a>
+                    <a href="about.html">
+              <img class="circles" src="images/cassy.jpg" width="40px" height="40px">
+              </a>
+                    <a href="resume.html">
+              <img class="circles" src="images/cassy.jpg" width="40px" height="40px">
+              </a>
+                </nav>
+            </div>
+        </div>
+
     </header>
 
-    <div class="TextWrapper">
+
+    
+    
+    <main>
+     <div class="TextWrapper">
         <h2 class = "title" id="experience">Experience</h2>
         <h3>GENERAL ELECTRIC DIGITAL</h3>
         <h4>User Experience Designer - Niskyuana, NY & Remote</h4>
@@ -105,12 +100,24 @@
     </div>
 
     <img src="images/Cassy_Smithies_Design_Resume.png" id="Resume" alt="Cassy Smithies' Design Resume">
-        
+    </main>
+
     <footer>
         <h5>cls8313@rit.edu</h5>
         <h5>413-896-3205</h5>
     </footer>
 
-</div>
+    </div>
+        
 
 </html>
+
+<script>
+    $('.menu-btn').on('click', function(e) {
+        e.preventDefault();
+        $(this).toggleClass('menu-btn_active');
+        $('.menu').toggleClass('menu_active');
+    });
+
+</script>
+
